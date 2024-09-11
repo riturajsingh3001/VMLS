@@ -25,7 +25,7 @@ let headerImgs = document.querySelectorAll(".header-img-02");
 
 Array.from(headerImgs).forEach((headerImg) => {
   let link = document.createElement("a");
-  link.href = "http://tectrademo.com/web/";
+  link.href = "https://vmls.netlify.app/";
   headerImg.parentNode.insertBefore(link, headerImg);
   link.appendChild(headerImg);
 });
