@@ -238,10 +238,11 @@
   object-fit: cover;
 }
 .hom-sec-2-row p {
-  font-size: 1vw;
+  font-size: 0.9vw;
+  text-align: justify;
 }
 .hom-sec-2-row h3 {
-  font-size: 1.8vw;
+  font-size: 1.4vw;
   font-weight: normal;
   margin-bottom: 2vh;
 }
