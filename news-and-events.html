@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>News and Events</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/dropdown.css" />
+    <link rel="stylesheet" href="./styles/coj.css" />
+    <link rel="stylesheet" href="./styles/news.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Imperator%3A400"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <style>
+      @font-face {
+        font-family: "Imperator";
+        src: url("/public/Imperator.ttf");
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="landing" id="coj-landing">
+      <!-- menu-starts-here -->
+      <div class="menu" id="menu-content">
+        <div class="menu-main">
+          <!-- close-button -->
+          <div class="close-btn" id="close-btn">
+            <img src="./public/x.svg" alt="image" />
+            <p>CLOSE</p>
+          </div>
+          <!-- close-button -->
+          <div class="menu-main-left wow bounceInUp">
+            <!-- arrow-image -->
+            <a class="menu-arrow-img" href="#"
+              ><img src="./public/frame-68@2x.png" alt="image"
+            /></a>
+            <!-- arrow-image -->
+            <div class="menu-top">
+              <ul class="menu-top-1a">
+                <li class="dropbtn">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    About <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./About-VMRF.html">About VMRF ></a>
+                    <a href="./about.html">About VMLS ></a>
+                    <a href="./Dr.A.Shanmugasundaram.html">Founder ></a>
+                    <a href="./Dr.A.S.Ganesan.html">Chancellor ></a>
+                    <a href="./Dr.AnanthPadmanabhan.html">Dean ></a>
+                  </div>
+                </li>
+
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    Admission <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./how-to-apply.html">Admission Process ></a>
+                  </div>
+                </li>
+
+                <li class="dropbtn">
+                  <a href="./Scholarships.html">Scholarships</a>
+                </li>
+
+                <li class="dropbtn">
+                  <a href="./Collaborations.html">Collaborations</a>
+                </li>
+                <li class="dropbtn">
+                  <a href="./academics.html">Academics</a>
+                </li>
+
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    Leadership <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./board-of-advisors.html">Board of Advisors ></a>
+                    <a href="./mentoring-committee.html"
+                      >Mentoring Committee ></a
+                    >
+                  </div>
+                </li>
+
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    Faculty <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./faculty.html">Faculty Profiles ></a>
+                    <a href="./achievements.html">Faculty Achievements ></a>
+                    <a href="#">Guest Lecturers ></a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    Campus Life <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./Campus.html">Infrastructure ></a>
+                    <a href="#">Campus Support ></a>
+                    <a href="#">Club's and Committees ></a>
+                  </div>
+                </li>
+
+                <li class="dropbtn">
+                  <a href="#">Governance and Policy</a>
+                </li>
+                <li class="dropbtn">
+                  <a href="./Contact-Us.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-main-right">
+            <div class="menu-main-right-row1">
+              <img src="./public/group-frame@2x.jpg" alt="image" />
+            </div>
+            <div class="menu-main-right-row2">
+              <div class="image-box">
+                <div class="img-box-content">
+                  <div>
+                    <p><span>18 Nov 2023</span><span>Guest lecture</span></p>
+                    <h3>Guest Lecture: Legal Awareness Rally</h3>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+                <div class="img-box-img">
+                  <img src="./public/rectangle-4@2x.jpg" alt="image" />
+                </div>
+              </div>
+              <div class="image-box">
+                <div class="img-box-content">
+                  <div>
+                    <p>18 Nov 2023</p>
+                    <h3>Legal Literacy Camp</h3>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+                <div class="img-box-img">
+                  <img src="./public/image-93@2x.jpg" alt="image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu-ends-here -->
+      <main class="main-landing">
+        <div class="header-main">
+          <div class="topbar" data-aos="slide-right">
+            <p>+91 7358201234 | admissions@vmls.edu.in</p>
+            <div class="topbar-right-img" id="right-menu">
+              <img
+                class="desktop-bar"
+                src="./public/Group-619.png"
+                alt="image"
+              />
+              <img
+                class="mobile-bar"
+                src="./public/two-line-menu.svg"
+                alt="image"
+              />
+              <p>MENU</p>
+            </div>
+          </div>
+          <div class="header" data-aos="slide-right" id="bg-white-5">
+            <img
+              class="header-img-01"
+              src="./public/Group-533.png"
+              alt="image"
+            />
+            <img
+              class="header-img-02"
+              src="./public/asset-44x-1@2x.png"
+              alt="image"
+            />
+          </div>
+        </div>
+      </main>
+    </div>
+    <section id="news">
+      <h3 class="news-main-heading">News and Events</h3>
+      <div class="row1">
+        <a href="#">
+          <div class="column" id="clmn-1">
+            <img src="./assets/news1.jpg" alt="" />
+            <h3>2024</h3>
+            <p>Arram Magazine</p>
+          </div>
+        </a>
+        <div class="column" id="clmn-flex">
+          <a href="./news/legal-literacy-camp.html">
+            <div class="image">
+              <img src="./assets/news2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>November 18, 2023 </span>
+              <p>Legal Literacy Camp</p>
+            </div>
+          </a>
+          <a href="./news/legal-awareness-rally.html">
+            <div class="image">
+              <img src="./assets/news3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>November 09, 2023 </span>
+              <p>Legal Awareness Rally</p>
+            </div>
+          </a>
+          <a href="./news/legal-design-competition.html">
+            <div class="image">
+              <img src="./assets/news4.jpg" alt="" />
+            </div>
+            <div class="content">
+              <span>November 07, 2023 </span>
+              <p>Legal Design Competition</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <h3 class="news-main-heading">Top Stories</h3>
+      <div class="row2">
+        <div class="column">
+          <a href="./news/1st-CJT-Lecture.html">
+            <div class="image">
+              <img src="./assets/news5.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>
+                1st CJT lecture Digitization of Courts: Experiences from the
+                bench
+              </p>
+              <span>November 07, 2023</span>
+            </div></a
+          >
+        </div>
+        <div class="column">
+          <a href="./news/inauguration-day.html">
+            <div class="image">
+              <img src="./assets/news6.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>Inauguration Day</p>
+              <span>September 11, 2023</span>
+            </div></a
+          >
+        </div>
+        <div class="column">
+          <a href="#">
+            <div class="image">
+              <img src="./assets/news7.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>
+                Mentorship Collaboration: O.P. Jindal Global University, Sonipat
+              </p>
+              <span>March 15 2024 </span>
+            </div></a
+          >
+        </div>
+        <div class="column">
+          <a href="#">
+            <div class="image">
+              <img src="./assets/news8.jpg" alt="" />
+            </div>
+            <div class="content">
+              <p>Memorandum of Understanding (MOU) with Corn Toppers</p>
+              <span>March 15 2024</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row3">
+        <div class="column">
+          <h3 class="news-main-heading">Latest stories</h3>
+          <div class="inner-column" id="inner-clmn-1">
+            <a href="#">
+              <div class="content">
+                <b>
+                  The Center of Promotion of International Law (CPIL) has
+                  Successfully concluded its Second Special Lecture on “
+                  Mediation and Arbitration: Practice, Projects and Challenges
+                  in India “
+                </b>
+                <p>
+                  Featuring Akash Gupta, Assistant professor at Jindal Global
+                  Law School (JGLS) and esteemed ADR expert , the event provided
+                  invaluable insights to india’s #ADR
+                </p>
+                <span>VMLS | 20 minutes ago</span>
+              </div>
+              <div class="image">
+                <img src="./assets/news9.jpg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div class="content">
+                <b>
+                  We're delighted to share the resounding success of the Special
+                  Lecture on 'International Maritime Law' hosted by the VMLS
+                  Centre for Maritime Law on February 24th, 2024!</b
+                >
+                <p>
+                  Prof. Mayank Suri, Assistant Professor at JGLS, and Mr. Suriya
+                  N Sundararajan, WMU-GOI Project and Research Support Fellow
+                  captivated our students with their in-depth insights and
+                  expertise in the field.
+                </p>
+                <span>VMLS | 20 minutes ago</span>
+              </div>
+              <div class="image">
+                <img src="./assets/news10.jpg" alt="" />
+              </div>
+            </a>
+            <a href="#">
+              <div class="content">
+                <b>
+                  MLS is thrilled to announce the successful completion of our
+                  special lecture on 'Advocacy in Tamil,' delivered by High
+                  Court advocate Dr. Gomathi Senthil Kumar.</b
+                >
+                <p>
+                  Delving into the intricacies of regional legal practice and
+                  interpretation of laws in #Tamil, the lecture underscored the
+                  importance of #bilingual education and #inclusivity in legal
+                  discourse.
+                </p>
+                <span>Narsi Benwal | 20 minutes ago</span>
+              </div>
+              <div class="image">
+                <img src="./assets/news11.jpg" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="column">
+          <h3 class="news-main-heading">Upcoming Events</h3>
+          <div class="inner-column" id="inner-clmn-2">
+            <a href="./assets/news/2nd-cjt.jpeg" target="_blank">
+              <div class="image">
+                <img src="./assets/news12.jpg" alt="" />
+              </div>
+              <div class="content">
+                <p>
+                  2nd CJT Lecture. Digitalization of Courts: Experiences from
+                  the Bar
+                </p>
+                <span>VMLS | 20 minutes ago</span>
+              </div>
+            </a>
+            <a href="#">
+              <div class="image">
+                <img src="./assets/news13.jpg" alt="" />
+              </div>
+              <div class="content">
+                <p>VLAT (VMRF Law Admission Test) 2024-25 commences soon</p>
+                <span>VMLS | 20 minutes ago</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div
+        class="footer coj-foot scholarship-foot"
+        id="contact-us"
+        data-aos="slide-right"
+      >
+        <div class="footer-row">
+          <img
+            class="foot-logo"
+            src="./assets/last/fotter-logo.png"
+            alt="image"
+          />
+          <h3>Law School of the Future</h3>
+          <div class="social-links social-links-footer">
+            <a href="#">
+              <img src="./assets/last/icons8-facebook 1.png" alt="image" />
+            </a>
+            <a href="#">
+              <img src="./assets/last/icons8-instagram 1.png" alt="image" />
+            </a>
+            <a href="#">
+              <img src="./assets/last/Vector.png" alt="image" />
+            </a>
+            <a href="#">
+              <img src="./assets/last/icons8-twitter 1.png" alt="image" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-row address-row">
+          <div class="foot-clmn">
+            <div class="heading-foot">
+              <span
+                ><img src="./assets/last/map.png" alt="image" />
+                <h4>VMLS Campus Address</h4></span
+              >
+            </div>
+            <p>
+              Nayaka Nagar, Rajiv Gandhi Salai (Old Mahabalipuram Road),
+              Paiyanoor, Chennai- 603104 Tamil Nadu, India
+            </p>
+          </div>
+          <div class="foot-clmn">
+            <div class="heading-foot">
+              <span
+                ><img src="./assets/last/map.png" alt="image" />
+                <h4>Corporate Office Address</h4></span
+              >
+            </div>
+            <p>
+              No: 213, Old No: 160, Behind Doshi Tower, Poonamallee High Road,
+              Kilpauk, Chennai- 600 010, Tamil Nadu, India
+            </p>
+          </div>
+        </div>
+        <div class="footer-row contact-us">
+          <h4>Contact Us</h4>
+          <div class="heading-foot">
+            <span
+              ><img src="./assets/last/phone.png" alt="image" />
+              <p>18003094350 | 7358201234</p></span
+            >
+          </div>
+          <div class="heading-foot">
+            <span
+              ><img src="./assets/last/email.png" alt="image" />
+              <p>admissions@vmls.edu.in</p></span
+            >
+          </div>
+        </div>
+        <div class="footer-row">
+          <h3>Get to know us</h3>
+          <form action="#" method="post">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your Name*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your Mobile number"
+              />
+            </div>
+            <div class="form-group">
+              <select id="state" name="state" placeholder="Select State">
+                <option value="">Select State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+              </select>
+              <select id="city" name="city" placeholder="Select City">
+                <option value="">Select City</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        <span class="foot-bottom">
+          <a href="#">Refund Policy</a>
+          <a href="#">Anti Ragging Committee</a>
+          <a href="#">Anti Ragging Measures</a>
+        </span>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="./script/menu.js"></script>
+    <script src="./script/dropdown.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

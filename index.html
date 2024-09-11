@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Imperator%3A400"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway%3A400%2C500%2C600%2C700"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        overflow-x: scroll;
+      }
+
+      .section {
+        display: flex;
+        flex-flow: row;
+        flex-wrap: nowrap;
+        overscroll-behavior: none;
+        scroll-snap-type: x mandatory;
+      }
+
+      .panel {
+        min-width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+      }
+      #section-2 .panel {
+        height: calc(100vh - 20vh);
+        align-self: flex-end;
+      }
+
+      .panel:nth-child(odd) {
+        background-color: rgb(255, 255, 255);
+      }
+
+      .panel:nth-child(even) {
+        background-color: rgb(255, 255, 255);
+      }
+
+      #section-2 .panel:first-child {
+        background: purple;
+      }
+
+      nav {
+        margin: 10px;
+        position: fixed;
+        bottom: 10px;
+      }
+
+      button {
+        cursor: pointer;
+      }
+      @font-face {
+        font-family: "Imperator";
+        src: url("/assets/Imperator.ttf");
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section" id="section-1">
+      <div class="panel">
+        <div class="landing">
+          <!-- menu-starts-here -->
+          <div class="menu" id="menu-content">
+            <div class="menu-main">
+              <!-- close-button -->
+              <div class="close-btn" id="close-btn">
+                <img src="./public/x.svg" alt="image" />
+                <p>CLOSE</p>
+              </div>
+              <!-- close-button -->
+              <div class="menu-main-left wow bounceInUp">
+                <!-- arrow-image -->
+                <a class="menu-arrow-img" href="#"
+                  ><img src="./public/frame-68@2x.png" alt="image"
+                /></a>
+                <!-- arrow-image -->
+                <div class="menu-top">
+                  <ul class="menu-top-1a">
+                    <li class="dropbtn">
+                      <a href="./index.html">Home</a>
+                    </li>
+                    <li class="dropdown">
+                      <button onclick="toggleDropdown(this)" class="dropbtn">
+                        About <i class="fas fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="./About-VMRF.html">About VMRF ></a>
+                        <a href="./about.html">About VMLS ></a>
+                        <a href="./Dr.A.Shanmugasundaram.html">Founder ></a>
+                        <a href="./Dr.A.S.Ganesan.html">Chancellor ></a>
+                        <a href="./Dr.AnanthPadmanabhan.html">Dean ></a>
+                      </div>
+                    </li>
+
+                    <li class="dropdown">
+                      <button onclick="toggleDropdown(this)" class="dropbtn">
+                        Admission <i class="fas fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="./how-to-apply.html">Admission Process ></a>
+                      </div>
+                    </li>
+
+                    <li class="dropbtn">
+                      <a href="./Scholarships.html">Scholarships</a>
+                    </li>
+
+                    <li class="dropbtn">
+                      <a href="./Collaborations.html">Collaborations</a>
+                    </li>
+                    <li class="dropbtn">
+                      <a href="./academics.html">Academics</a>
+                    </li>
+
+                    <li class="dropdown">
+                      <button onclick="toggleDropdown(this)" class="dropbtn">
+                        Leadership <i class="fas fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="./board-of-advisors.html"
+                          >Board of Advisors ></a
+                        >
+                        <a href="./mentoring-committee.html"
+                          >Mentoring Committee ></a
+                        >
+                      </div>
+                    </li>
+
+                    <li class="dropdown">
+                      <button onclick="toggleDropdown(this)" class="dropbtn">
+                        Faculty <i class="fas fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="./faculty.html">Faculty Profiles ></a>
+                        <a href="./achievements.html">Faculty Achievements ></a>
+                        <a href="#">Guest Lecturers ></a>
+                      </div>
+                    </li>
+                    <li class="dropdown">
+                      <button onclick="toggleDropdown(this)" class="dropbtn">
+                        Campus Life <i class="fas fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="./Campus.html">Infrastructure ></a>
+                        <a href="#">Campus Support ></a>
+                        <a href="#">Club's and Committees ></a>
+                      </div>
+                    </li>
+
+                    <li class="dropbtn">
+                      <a href="#">Governance and Policy</a>
+                    </li>
+                    <li class="dropbtn">
+                      <a href="./Contact-Us.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-main-right">
+                <div class="menu-main-right-row1">
+                  <img src="./public/group-frame@2x.jpg" alt="image" />
+                </div>
+                <div class="menu-main-right-row2">
+                  <div class="image-box">
+                    <div class="img-box-content">
+                      <div>
+                        <p>
+                          <span>18 Nov 2023</span><span>Guest lecture</span>
+                        </p>
+                        <h3>Guest Lecture: Legal Awareness Rally</h3>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                      </p>
+                    </div>
+                    <div class="img-box-img">
+                      <img src="./public/rectangle-4@2x.jpg" alt="image" />
+                    </div>
+                  </div>
+                  <div class="image-box">
+                    <div class="img-box-content">
+                      <div>
+                        <p>18 Nov 2023</p>
+                        <h3>Legal Literacy Camp</h3>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                      </p>
+                    </div>
+                    <div class="img-box-img">
+                      <img src="./public/image-93@2x.jpg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- menu-ends-here -->
+          <main class="main-landing">
+            <div class="header-main">
+              <div class="topbar" data-aos="slide-right">
+                <p>+91 7358201234 | admissions@vmls.edu.in</p>
+                <div class="topbar-right-img" id="right-menu">
+                  <img src="./public/Group-619.png" alt="image" />
+                  <p>MENU</p>
+                </div>
+              </div>
+              <div class="header" data-aos="slide-right">
+                <img
+                  class="header-img-01"
+                  src="./public/Group-533.png"
+                  alt="image"
+                />
+                <img
+                  class="header-img-02"
+                  src="./public/asset-44x-1@2x.png"
+                  alt="image"
+                />
+              </div>
+            </div>
+            <div class="landing-main-screen">
+              <!-- down-icon -->
+
+              <div class="down-btn" data-aos="slide-right">
+                <a href="#section-2">
+                  <button class="button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 97 162"
+                      height="162"
+                      width="97"
+                      class="svg"
+                    >
+                      <path
+                        fill="#262626"
+                        d="M47.2124 0H54.0796V151.644L86.6991 128.712H97L50.646 162L0 128.712H10.3009L47.2124 151.644V0Z"
+                      ></path>
+                    </svg></button
+                ></a>
+              </div>
+              <!-- down-icon -->
+              <!-- red-banner -->
+              <div class="red-banner" data-aos="slide-right">
+                <h3>Law School of the Future</h3>
+              </div>
+              <!-- red-banner -->
+              <div class="main-screen-parent">
+                <div class="main-screen">
+                  <div class="main-screen-left">
+                    <img src="./public/image-7@2x.png" alt="image" />
+                    <p>
+                      VMLS is being mentored by O.P. Jindal Global University
+                      (an Institution of Eminence) and Jindal Global Law School
+                      under an institutional mentorship agreement.
+                    </p>
+                    <img src="./public/group-454@2x.png" alt="image" />
+                  </div>
+                  <div class="main-screen-right">
+                    <img src="./public/image-8@2x.png" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+    <div class="section horizontal" id="section-2">
+      <div class="landing">
+        <!-- menu-starts-here -->
+        <div class="menu" id="menu-content">
+          <div class="menu-main">
+            <!-- close-button -->
+            <div class="close-btn" id="close-btn">
+              <img src="./public/x.svg" alt="image" />
+              <p>CLOSE</p>
+            </div>
+            <!-- close-button -->
+            <div class="menu-main-left wow bounceInUp">
+              <!-- arrow-image -->
+              <a class="menu-arrow-img" href="#"
+                ><img src="./public/frame-68@2x.png" alt="image"
+              /></a>
+              <!-- arrow-image -->
+              <div class="menu-top">
+                <ul class="menu-top-1a">
+                  <li class="dropbtn">
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li class="dropdown">
+                    <button onclick="toggleDropdown(this)" class="dropbtn">
+                      About <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="./About-VMRF.html">About VMRF ></a>
+                      <a href="./about.html">About VMLS ></a>
+                      <a href="./Dr.A.Shanmugasundaram.html">Founder ></a>
+                      <a href="./Dr.A.S.Ganesan.html">Chancellor ></a>
+                      <a href="./Dr.AnanthPadmanabhan.html">Dean ></a>
+                    </div>
+                  </li>
+
+                  <li class="dropdown">
+                    <button onclick="toggleDropdown(this)" class="dropbtn">
+                      Admission <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="./how-to-apply.html">Admission Process ></a>
+                    </div>
+                  </li>
+
+                  <li class="dropbtn">
+                    <a href="./Scholarships.html">Scholarships</a>
+                  </li>
+
+                  <li class="dropbtn">
+                    <a href="./Collaborations.html">Collaborations</a>
+                  </li>
+                  <li class="dropbtn">
+                    <a href="./academics.html">Academics</a>
+                  </li>
+
+                  <li class="dropdown">
+                    <button onclick="toggleDropdown(this)" class="dropbtn">
+                      Leadership <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="./board-of-advisors.html">Board of Advisors ></a>
+                      <a href="./mentoring-committee.html"
+                        >Mentoring Committee ></a
+                      >
+                    </div>
+                  </li>
+
+                  <li class="dropdown">
+                    <button onclick="toggleDropdown(this)" class="dropbtn">
+                      Faculty <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="./faculty.html">Faculty Profiles ></a>
+                      <a href="./achievements.html">Faculty Achievements ></a>
+                      <a href="#">Guest Lecturers ></a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <button onclick="toggleDropdown(this)" class="dropbtn">
+                      Campus Life <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="./Campus.html">Infrastructure ></a>
+                      <a href="#">Campus Support ></a>
+                      <a href="#">Club's and Committees ></a>
+                    </div>
+                  </li>
+
+                  <li class="dropbtn">
+                    <a href="#">Governance and Policy</a>
+                  </li>
+                  <li class="dropbtn">
+                    <a href="./Contact-Us.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu-main-right">
+              <div class="menu-main-right-row1">
+                <img src="./public/group-frame@2x.jpg" alt="image" />
+              </div>
+              <div class="menu-main-right-row2">
+                <div class="image-box">
+                  <div class="img-box-content">
+                    <div>
+                      <p><span>18 Nov 2023</span><span>Guest lecture</span></p>
+                      <h3>Guest Lecture: Legal Awareness Rally</h3>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                  <div class="img-box-img">
+                    <img src="./public/rectangle-4@2x.jpg" alt="image" />
+                  </div>
+                </div>
+                <div class="image-box">
+                  <div class="img-box-content">
+                    <div>
+                      <p>18 Nov 2023</p>
+                      <h3>Legal Literacy Camp</h3>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                  <div class="img-box-img">
+                    <img src="./public/image-93@2x.jpg" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <main class="main-landing">
+          <div class="header-main">
+            <div class="topbar" data-aos="slide-right">
+              <p>+91 7358201234 | admissions@vmls.edu.in</p>
+              <div class="topbar-right-img" id="right-menu">
+                <img src="./public/Group-619.png" alt="image" />
+                <p>MENU</p>
+              </div>
+            </div>
+            <div class="header" data-aos="slide-right">
+              <img
+                class="header-img-01"
+                src="./public/Group-533.png"
+                alt="image"
+              />
+              <img
+                class="header-img-02"
+                src="./public/asset-44x-1@2x.png"
+                alt="image"
+              />
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="panel" id="home-panel1">
+        <div class="homepage">
+          <div class="home-sec-1">
+            <div class="homesec-1-row1">
+              <div class="homesec1-inner-column" data-aos="slide-right">
+                <div class="inner-column-row">
+                  <div class="inner-column-row-img inner-column-row-img-hover">
+                    <img src="./assets/Frame-53139.png" alt="image" />
+                  </div>
+                  <div class="inner-column-row-img inner-column-row-img-hover">
+                    <img src="./assets/Frame-93.png" alt="image" />
+                  </div>
+                </div>
+                <div class="inner-column-row ineer-row-hover-effect">
+                  <a href="./Dr.A.Shanmugasundaram.html"
+                    ><div class="inner-col inner-column-row-img-hover">
+                      <img src="./assets/Frame-53135.png" alt="image" /></div
+                  ></a>
+                  <a href="./Dr.A.S.Ganesan.html">
+                    <div class="inner-col inner-column-row-img-hover">
+                      <img src="./assets/Frame-53136.png" alt="image" /></div
+                  ></a>
+                  <a href="./Dr.Anuradha-Ganesan.html">
+                    <div class="inner-col inner-column-row-img-hover">
+                      <img src="./assets/image-100.png" alt="image" /></div
+                  ></a>
+                </div>
+              </div>
+              <div class="homesec1-inner-column" data-aos="slide-right">
+                <div class="dean-img">
+                  <img src="./assets/dean.png" alt="image" />
+                </div>
+                <div class="inner-cntnt">
+                  <h3>From the Dean’s Desk</h3>
+                  <p>
+                    At VMLS, we spend all our energies unraveling what the law
+                    school of the future means, and should aspire to achieve.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="homesec-1-row2" data-aos="slide-right">
+              <div class="image-row-hmsec-1-2">
+                <div class="homsec1-row2-innercolumn">
+                  <img src="./assets/image12.png" alt="image" />
+                </div>
+                <div class="homsec1-row2-innercolumn">
+                  <img src="./assets/Group-623.png" alt="image" />
+                </div>
+                <div class="homsec1-row2-innercolumn">
+                  <img src="./assets/Group-624.png" alt="image" />
+                </div>
+                <div class="homsec1-row2-innercolumn">
+                  <img src="./assets/Group-625.png" alt="image" />
+                </div>
+                <div class="homsec1-row2-innercolumn">
+                  <img src="./assets/Group626.png" alt="image" />
+                </div>
+                <div class="homsec1-row2-innercolumn">
+                  <img src="./assets/Group628.png" alt="image" />
+                </div>
+              </div>
+              <div class="homsec1-row2-innercolumn">
+                <h3>Board of Advisors</h3>
+                <p>
+                  Dive into the rich tapestry of Indian society with "Diverse
+                  Threads: Exploring the Fabric of Indian Society," a
+                  captivating book authored by VMLS's very own, Dr. Sanga
+                  Mithra. Ph.D and published by ELIVA press.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- section-2 -->
+          <div class="home-sec-2" data-aos="slide-right">
+            <div class="hom-sec-2-row">
+              <img src="./assets/Frame89.png" alt="image" />
+            </div>
+            <div class="hom-sec-2-row">
+              <div class="home-sec-2-column">
+                <div class="column">
+                  <div class="top-heading">
+                    <p><span>18 Nov 2023</span><span>Guest lecture</span></p>
+                    <h3>1st CJT Lecture</h3>
+                  </div>
+                  <p>
+                    Dive into the transformative journey of court digitization
+                    with VMLS's Center for Justice through Technology. Join us
+                    as we explore the visionary strides of Justice S.
+                    Muralidhar.
+                  </p>
+                </div>
+                <div class="column">
+                  <img src="./assets/Frame59.png" alt="image" />
+                </div>
+              </div>
+              <div class="home-sec-2-column">
+                <div class="top-heading">
+                  <p>
+                    <span>18 Nov 2023</span><span>FACULTY ACHIEVEMENT</span>
+                  </p>
+                  <h3>1st CJT Lecture</h3>
+                </div>
+                <p>
+                  Dive into the transformative journey of court digitization
+                  with VMLS's Center for Justice through Technology. Join us as
+                  we explore the visionary strides of Justice S. Muralidhar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- section-3 -->
+          <div class="home-sec-3" data-aos="slide-right">
+            <div class="home-sec-3-row">
+              <h3>Collaborations</h3>
+            </div>
+            <div class="home-sec-3-row">
+              <div class="sec-3-row-column">
+                <h3>Institutional</h3>
+                <div class="slider">
+                  <ul>
+                    <li>
+                      <img src="./assets/logo/1.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/2.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/3.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/4.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/5.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/6.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/7.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/8.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/9.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/10.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/11.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/12.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/13.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/14.png" alt="" />
+                    </li>
+                    <li>
+                      <img src="./assets/logo/15.png" alt="" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="sec-3-row-column">
+                <div class="inner-column">
+                  <h3>Academic</h3>
+                  <div class="sec-3logos">
+                    <div class="sec3-logo-clmn">
+                      <img src="./assets/O.P1.png" alt="image" />
+                    </div>
+                    <div class="sec3-logo-clmn">
+                      <img src="./assets/Group454.png" alt="image" />
+                    </div>
+                  </div>
+                  <p>
+                    VMLS is being mentored by O.P. Jindal Global University (an
+                    Institution of Eminence) and Jindal Global Law School under
+                    an institutional mentorship agreement.
+                  </p>
+                </div>
+                <div class="inner-column">
+                  <img src="./assets/Frame-53245.png" alt="image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- section-4 -->
+          <div class="home-sec-4" data-aos="slide-right">
+            <div class="section-4-row">
+              <h3>News and Events</h3>
+            </div>
+            <div class="section-4-row">
+              <div class="column-4">
+                <a class="read-more" href="./news-and-events.html">READ MORE</a>
+                <div class="inner-4 inner-4-content inner-4-content1">
+                  <div class="top-content-4">
+                    <p>25 JAN 2024</p>
+                    <h3>Launch of VMLS International Law Review</h3>
+                  </div>
+                  <p>
+                    Embark on a journey of legal scholarship and global
+                    discourse with the inaugural launch of VMLS International
+                    Law Review.
+                  </p>
+                </div>
+                <div class="inner-4">
+                  <img src="./assets/image-2.jpg" alt="image" />
+                </div>
+              </div>
+              <div class="column-4">
+                <a class="read-more" href="./news-and-events.html">READ MORE</a>
+                <div class="inner-4 inner-4-content inner-4-content2">
+                  <div class="top-content-4">
+                    <p>18 Nov 2023</p>
+                    <h3>1st CJT Lecture</h3>
+                  </div>
+                  <p>
+                    Dive into the transformative journey of court digitization
+                    with VMLS's Center for Justice through Technology. Join us
+                    as we explore the visionary strides of Justice S.
+                    Muralidhar.
+                  </p>
+                </div>
+                <div class="inner-4">
+                  <img src="./assets/Frame59.png" alt="image" />
+                </div>
+              </div>
+            </div>
+            <div class="section-4-row section-4-row2">
+              <div class="img-4">
+                <img src="./assets/Frame53247.png" alt="image" />
+              </div>
+              <div class="sec-4cntntn">
+                <p>25 JAN 2024</p>
+                <h3>Arram Magazine</h3>
+                <p>
+                  Arram" – is a captivating chronicle of the remarkable events
+                  that shaped the past year at VMLS Law School. From student
+                  achievements to faculty insights, infrastructure showcases,
+                  and groundbreaking innovations, "Arram" is your window into
+                  our collective resilience and unwavering commitment to legal
+                  education.
+                </p>
+              </div>
+            </div>
+            <div class="section-4-row">
+              <div class="column-4">
+                <a class="read-more" href="./news-and-events.html">READ MORE</a>
+                <div class="inner-4 inner-4-content inner-4-content3">
+                  <div class="top-content-4">
+                    <p>18 Nov 2023</p>
+                    <h3>Legal Design Competition</h3>
+                  </div>
+                  <p>
+                    The FLIP CASE Legal Design Competition is an event that
+                    seamlessly blends legal expertise with cutting-edge
+                    technological innovation.
+                  </p>
+                </div>
+                <div class="inner-4">
+                  <img src="./assets/Frame59-3.png" alt="image" />
+                </div>
+              </div>
+              <div class="column-4">
+                <a class="read-more" href="./news-and-events.html">READ MORE</a>
+                <div class="inner-4 inner-4-content inner-4-content4">
+                  <div class="top-content-4">
+                    <p>18 Nov 2023</p>
+                    <h3>Legal Literacy Camp</h3>
+                  </div>
+                  <p>
+                    In commemoration of Constitutional Day, VMLS Global Tamil
+                    Law Center (GTLC) organized a legal literacy camp, aligning
+                    with the vision of Dr. B.R. Ambedkar to transform political
+                    democracy into social democracy.
+                  </p>
+                </div>
+                <div class="inner-4">
+                  <img src="./assets/Frame59-1.png" alt="image" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- section-5 -->
+          <div class="home-section-5" data-aos="slide-right">
+            <div class="home-section-5-row">
+              <h3>Admission</h3>
+            </div>
+            <div class="home-section-5-row">
+              <div class="banner-img banner-img1">
+                <img src="./assets/Group661.png" alt="image" />
+              </div>
+              <img src="./assets/NIRU38941.png" alt="image" />
+            </div>
+            <div class="home-section-5-row">
+              <div class="banner-img">
+                <img src="./assets/Group626(2).png" alt="image" />
+              </div>
+              <img src="./assets/image91.png" alt="image" />
+            </div>
+          </div>
+          <!-- section-6 -->
+          <div class="home-section-6" id="campus" data-aos="slide-right">
+            <div class="section-6-row">
+              <h3>Infrastructure</h3>
+            </div>
+            <div class="section-6-row" id="section-6-row-2">
+              <div class="column-infra">
+                <div class="image-infra">
+                  <img src="./assets/infra1.jpg" alt="" />
+                </div>
+                <div class="float-infra">
+                  <div class="link-infra">
+                    <a class="read-more2" href="./classroom.html">READ MORE</a>
+                  </div>
+                  <div class="inner-content-infra">
+                    <h4>Classroom</h4>
+                    <p>
+                      The classrooms of VMLS are a testament to modern
+                      educational advancements, blending technology with design
+                      to create an environment ripe for learning.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="column-infra">
+                <div class="image-infra">
+                  <img src="./assets/infra2.jpg" alt="" />
+                </div>
+                <div class="float-infra">
+                  <div class="link-infra">
+                    <a class="read-more2" href="./atrium.html">READ MORE</a>
+                  </div>
+                  <div class="inner-content-infra">
+                    <h4>Atrium</h4>
+                    <p>
+                      The atrium of VMLS fosters an atmosphere that is both
+                      inviting and conducive to academic pursuits.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="column-infra">
+                <div class="image-infra">
+                  <img src="./assets/infra3.jpg" alt="" />
+                </div>
+                <div class="float-infra">
+                  <div class="link-infra">
+                    <a class="read-more2" href="./main-building.html"
+                      >READ MORE</a
+                    >
+                  </div>
+                  <div class="inner-content-infra">
+                    <h4>Main Building</h4>
+                    <p>
+                      The main building of VMLS stands as a striking example of
+                      modern architecture, where functionality meets aesthetic
+                      precision
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="column-infra">
+                <div class="image-infra">
+                  <img src="./assets/infra4.jpg" alt="" />
+                </div>
+                <div class="float-infra">
+                  <div class="link-infra">
+                    <a class="read-more2" href="./library.html">READ MORE</a>
+                  </div>
+                  <div class="inner-content-infra">
+                    <h4>Library</h4>
+                    <p>
+                      The VMLS Library represents a significant advancement in
+                      the integration of traditional library services with
+                      cutting-edge technology.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="column-infra">
+                <div class="image-infra">
+                  <img src="./assets/infra5.jpg" alt="" />
+                </div>
+                <div class="float-infra">
+                  <div class="link-infra">
+                    <a class="read-more2" href="./moot-court.html">READ MORE</a>
+                  </div>
+                  <div class="inner-content-infra">
+                    <h4>Moot Court</h4>
+                    <p>
+                      The VMLS Moot Court is a state-of-the-art facility
+                      designed to simulate real-world legal proceedings,
+                      providing students with a practical environment to develop
+                      their advocacy skills
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="column-infra">
+                <div class="image-infra">
+                  <img src="./assets/infra6.jpg" alt="" />
+                </div>
+                <div class="float-infra">
+                  <div class="link-infra">
+                    <a class="read-more2" href="./seminar-halls.html"
+                      >READ MORE</a
+                    >
+                  </div>
+                  <div class="inner-content-infra">
+                    <h4>Seminar Halls</h4>
+                    <p>
+                      The VMLS Seminar Hall is a modern facility designed to
+                      host a variety of academic and professional events.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="column-infra">
+                <div class="image-infra">
+                  <img src="./assets/infra7.jpg" alt="" />
+                </div>
+                <div class="float-infra">
+                  <div class="link-infra">
+                    <a class="read-more2" href="./food-court.html">READ MORE</a>
+                  </div>
+                  <div class="inner-content-infra">
+                    <h4>Food Court</h4>
+                    <p>
+                      The VMLS food courts are designed to cater to the diverse
+                      culinary preferences and economic backgrounds of the
+                      student body.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="column-infra">
+                <div class="image-infra">
+                  <img src="./assets/infra8.jpg" alt="" />
+                </div>
+                <div class="float-infra">
+                  <div class="link-infra">
+                    <a class="read-more2" href="./hostel.html">READ MORE</a>
+                  </div>
+                  <div class="inner-content-infra">
+                    <h4>Hostel</h4>
+                    <p>
+                      we provide a comfortable and secure student environment.
+                      Our hostel offers various room categories to suit your
+                      preferences, including single, double, triple, and
+                      four-sharing room occupancy
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- section-7 -->
+          <div class="home-section-7" data-aos="slide-right">
+            <div class="home-sec-7-row">
+              <h3>Centres of Excellence</h3>
+            </div>
+            <div class="home-sec-7-row">
+              <a class="read-more" href="./global-tamil-law-centre.html"
+                >READ MORE</a
+              >
+              <div class="column">
+                <div class="inner-clmn inner-clmn-icon1">
+                  <img src="./assets/icons/1.png" alt="" />
+                  <h3>Global Tamil law Centre</h3>
+                </div>
+                <div class="inner-clmn">
+                  <img src="./assets/last/1.png" />
+                </div>
+              </div>
+              <div class="column">
+                <div class="inner-clmn">
+                  <img src="./assets/last/2.png" />
+                </div>
+                <div class="inner-clmn">
+                  <img src="./assets/last/3.png" />
+                </div>
+              </div>
+            </div>
+            <div class="home-sec-7-row">
+              <a
+                class="read-more"
+                href="./centre-for-justice-through-technology.html"
+                >READ MORE</a
+              >
+              <div class="column">
+                <div class="inner-clmn inner-clmn-icon2">
+                  <img src="./assets/icons/4.png" alt="" />
+                  <h3>Centre of Justice through technology</h3>
+                </div>
+                <div class="inner-clmn">
+                  <img src="./assets/last/4.png" />
+                </div>
+              </div>
+              <div class="column">
+                <div class="inner-clmn">
+                  <img src="./assets/last/5.png" />
+                </div>
+                <div class="inner-clmn">
+                  <img src="./assets/last/6.png" />
+                </div>
+              </div>
+            </div>
+            <div class="home-sec-7-row">
+              <a
+                class="read-more"
+                href="./centre-for-the-promotion-of-international-law.html"
+                >READ MORE</a
+              >
+              <div class="column">
+                <div class="inner-clmn inner-clmn-icon3">
+                  <img src="./assets/icons/2.png" alt="" />
+                  <h3>Centre for the promotion of international law</h3>
+                </div>
+                <div class="inner-clmn">
+                  <img src="./assets/last/10.png" />
+                </div>
+              </div>
+              <div class="column">
+                <div class="inner-clmn">
+                  <img src="./assets/last/11.png" />
+                </div>
+                <div class="inner-clmn">
+                  <img src="./assets/last/12.png" />
+                </div>
+              </div>
+            </div>
+            <div class="home-sec-7-row">
+              <a class="read-more" href="./centre-for-maritime-law.html"
+                >READ MORE</a
+              >
+              <div class="column">
+                <div class="inner-clmn inner-clmn-icon4">
+                  <img src="./assets/icons/3.png" alt="" />
+                  <h3>Maritime Law</h3>
+                </div>
+                <div class="inner-clmn">
+                  <img src="./assets/last/8.png" />
+                </div>
+              </div>
+              <div class="column">
+                <div class="inner-clmn">
+                  <img src="./assets/last/9.png" />
+                </div>
+                <div class="inner-clmn">
+                  <img src="./assets/last/10.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="panel"></div> -->
+    </div>
+    <div class="section" id="section-3">
+      <div class="panel">
+        <div class="landing footer-section">
+          <!-- menu-starts-here -->
+          <div class="menu" id="menu-content">
+            <div class="menu-main">
+              <!-- close-button -->
+              <div class="close-btn" id="close-btn">
+                <img src="./public/x.svg" alt="image" />
+                <p>CLOSE</p>
+              </div>
+              <!-- close-button -->
+              <div class="menu-main-left wow bounceInUp">
+                <!-- arrow-image -->
+                <a class="menu-arrow-img" href="#"
+                  ><img src="./public/frame-68@2x.png" alt="image"
+                /></a>
+                <!-- arrow-image -->
+                <div class="menu-top">
+                  <ul class="menu-top-1a">
+                    <li class="dropbtn">
+                      <a href="./index.html">Home</a>
+                    </li>
+                    <li class="dropdown">
+                      <button onclick="toggleDropdown(this)" class="dropbtn">
+                        About <i class="fas fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="./About-VMRF.html">About VMRF ></a>
+                        <a href="./about.html">About VMLS ></a>
+                        <a href="./Dr.A.Shanmugasundaram.html">Founder ></a>
+                        <a href="./Dr.A.S.Ganesan.html">Chancellor ></a>
+                        <a href="./Dr.AnanthPadmanabhan.html">Dean ></a>
+                      </div>
+                    </li>
+
+                    <li class="dropdown">
+                      <button onclick="toggleDropdown(this)" class="dropbtn">
+                        Admission <i class="fas fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="./how-to-apply.html">Admission Process ></a>
+                      </div>
+                    </li>
+
+                    <li class="dropbtn">
+                      <a href="./Scholarships.html">Scholarships</a>
+                    </li>
+
+                    <li class="dropbtn">
+                      <a href="./Collaborations.html">Collaborations</a>
+                    </li>
+                    <li class="dropbtn">
+                      <a href="./academics.html">Academics</a>
+                    </li>
+
+                    <li class="dropdown">
+                      <button onclick="toggleDropdown(this)" class="dropbtn">
+                        Leadership <i class="fas fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="./board-of-advisors.html"
+                          >Board of Advisors ></a
+                        >
+                        <a href="./mentoring-committee.html"
+                          >Mentoring Committee ></a
+                        >
+                      </div>
+                    </li>
+
+                    <li class="dropdown">
+                      <button onclick="toggleDropdown(this)" class="dropbtn">
+                        Faculty <i class="fas fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="./faculty.html">Faculty Profiles ></a>
+                        <a href="./achievements.html">Faculty Achievements ></a>
+                        <a href="#">Guest Lecturers ></a>
+                      </div>
+                    </li>
+                    <li class="dropdown">
+                      <button onclick="toggleDropdown(this)" class="dropbtn">
+                        Campus Life <i class="fas fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="./Campus.html">Infrastructure ></a>
+                        <a href="#">Campus Support ></a>
+                        <a href="#">Club's and Committees ></a>
+                      </div>
+                    </li>
+
+                    <li class="dropbtn">
+                      <a href="#">Governance and Policy</a>
+                    </li>
+                    <li class="dropbtn">
+                      <a href="./Contact-Us.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="menu-main-right">
+                <div class="menu-main-right-row1">
+                  <img src="./public/group-frame@2x.jpg" alt="image" />
+                </div>
+                <div class="menu-main-right-row2">
+                  <div class="image-box">
+                    <div class="img-box-content">
+                      <div>
+                        <p>
+                          <span>18 Nov 2023</span><span>Guest lecture</span>
+                        </p>
+                        <h3>Guest Lecture: Legal Awareness Rally</h3>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                      </p>
+                    </div>
+                    <div class="img-box-img">
+                      <img src="./public/rectangle-4@2x.jpg" alt="image" />
+                    </div>
+                  </div>
+                  <div class="image-box">
+                    <div class="img-box-content">
+                      <div>
+                        <p>18 Nov 2023</p>
+                        <h3>Legal Literacy Camp</h3>
+                      </div>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                      </p>
+                    </div>
+                    <div class="img-box-img">
+                      <img src="./public/image-93@2x.jpg" alt="image" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <main class="main-landing">
+            <div class="footer-main">
+              <div class="testimonials">
+                <div class="row-testimonial" data-aos="slide-right">
+                  <div class="testimonial-column">
+                    <p>
+                      VMLS boasts exceptional infrastructure that greatly
+                      enhances the learning experience. The state-of-the-art
+                      library, modern classrooms, and impressive moot court hall
+                      provide students with invaluable resources and practical
+                      skills. The college's commitment to safety and security
+                      further ensures a conducive environment for academic
+                      growth. Highly recommended!
+                    </p>
+                    <div class="testimonial-inner">
+                      <img src="./assets/Frame34.png" alt="image" />
+                      <span>
+                        <h3>Keerthana R</h3>
+                        <p>B.Com LLB. (Hons.) II Year</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="testimonial-column">
+                    <p>
+                      Studying at VMLS has been a transformative experience. The
+                      faculty's expertise and dedication to our success are
+                      unparalleled. The rigorous curriculum, combined with
+                      practical training through Moot Court competitions and
+                      Internships, has equipped me with the skills and
+                      confidence to excel in the legal profession.
+                    </p>
+                    <div class="testimonial-inner">
+                      <img src="./assets/Frame-testi-2.png" alt="image" />
+                      <span>
+                        <h3>Tharaneesh Kannaa AC</h3>
+                        <p>B.A LLB. (Hons.) II Year</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row-testimonial">
+                  <div class="testimonial-column">
+                    <p>
+                      Attending VMLS has been an enriching experience. The
+                      diverse student body, collaborative learning environment,
+                      and vibrant extracurricular activities have fostered a
+                      well-rounded legal education.
+                    </p>
+                    <div class="testimonial-inner">
+                      <img src="./assets/frame-testi-3.png" alt="image" />
+                      <span>
+                        <h3>M.Navitha</h3>
+                        <p>B.A LLB. (Hons.) II Year</p>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="testimonial-column">
+                    <p>
+                      The college's strong focus on ethical values,
+                      professionalism, and social justice has instilled in me a
+                      deep sense of responsibility as a future lawyer. The
+                      outstanding faculty, state-of-the-art facilities, and
+                      interactive teaching methodologies have prepared me to
+                      tackle complex legal issues with confidence.
+                    </p>
+                    <div class="testimonial-inner">
+                      <img src="./assets/neevetha-n.png" alt="image" />
+                      <span>
+                        <h3>Neevetha N</h3>
+                        <p>LLB. (Hons.) II Year</p>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer" data-aos="slide-right">
+                <div class="footer-row">
+                  <img src="./assets/last/fotter-logo.png" alt="image" />
+                  <h3>Law School of the Future</h3>
+                  <div class="social-links">
+                    <a href="#">
+                      <img
+                        src="./assets/last/icons8-facebook 1.png"
+                        alt="image"
+                      />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="./assets/last/icons8-instagram 1.png"
+                        alt="image"
+                      />
+                    </a>
+                    <a href="#">
+                      <img src="./assets/last/Vector.png" alt="image" />
+                    </a>
+                    <a href="#">
+                      <img
+                        src="./assets/last/icons8-twitter 1.png"
+                        alt="image"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-row address-row">
+                  <div class="foot-clmn">
+                    <div class="heading-foot">
+                      <span
+                        ><img src="./assets/last/map.png" alt="image" />
+                        <h4>VMLS Campus Address</h4></span
+                      >
+                    </div>
+                    <p>
+                      Nayaka Nagar, Rajiv Gandhi Salai (Old Mahabalipuram Road),
+                      Paiyanoor, Chennai- 603104 Tamil Nadu, India
+                    </p>
+                  </div>
+                  <div class="foot-clmn">
+                    <div class="heading-foot">
+                      <span
+                        ><img src="./assets/last/map.png" alt="image" />
+                        <h4>Corporate Office Address</h4></span
+                      >
+                    </div>
+                    <p>
+                      No: 213, Old No: 160, Behind Doshi Tower, Poonamallee High
+                      Road, Kilpauk, Chennai- 600 010, Tamil Nadu, India
+                    </p>
+                  </div>
+                </div>
+                <div class="footer-row contact-us">
+                  <h4>Contact Us</h4>
+                  <div class="heading-foot">
+                    <span
+                      ><img src="./assets/last/phone.png" alt="image" />
+                      <p>18003094350 | 7358201234</p></span
+                    >
+                  </div>
+                  <div class="heading-foot">
+                    <span
+                      ><img src="./assets/last/email.png" alt="image" />
+                      <p>admissions@vmls.edu.in</p></span
+                    >
+                  </div>
+                </div>
+                <div class="footer-row">
+                  <h3>Get to know us</h3>
+                  <form action="#" method="post">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your Name*"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address*"
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your Mobile number"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <select
+                        id="state"
+                        name="state"
+                        placeholder="Select State"
+                      >
+                        <option value="">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                      </select>
+                      <select id="city" name="city" placeholder="Select City">
+                        <option value="">Select City</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Pune">Pune</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit">Submit</button>
+                    </div>
+                  </form>
+                </div>
+                <span class="foot-bottom">
+                  <a href="#">Refund Policy</a>
+                  <a href="#">Anti Ragging Committee</a>
+                  <a href="#">Anti Ragging Measures</a>
+                </span>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile-screen-code -->
+    <div class="mobile-screens">
+      <div class="landing tab-landing">
+        <!-- menu-starts-here -->
+        <div class="menu" id="menu-content">
+          <div class="menu-main">
+            <!-- close-button -->
+            <div class="close-btn" id="close-btn">
+              <img src="./public/x.svg" alt="image" />
+              <p>CLOSE</p>
+            </div>
+            <!-- close-button -->
+            <div class="menu-main-left wow bounceInUp">
+              <!-- arrow-image -->
+              <a class="menu-arrow-img" href="#"
+                ><img src="./public/frame-68@2x.png" alt="image"
+              /></a>
+              <!-- arrow-image -->
+              <div class="menu-top">
+                <ul class="menu-top-1a">
+                  <li class="dropbtn">
+                    <a href="./index.html">Home</a>
+                  </li>
+                  <li class="dropdown">
+                    <button onclick="toggleDropdown(this)" class="dropbtn">
+                      About <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="./About-VMRF.html">About VMRF ></a>
+                      <a href="./about.html">About VMLS ></a>
+                      <a href="./Dr.A.Shanmugasundaram.html">Founder ></a>
+                      <a href="./Dr.A.S.Ganesan.html">Chancellor ></a>
+                      <a href="./Dr.AnanthPadmanabhan.html">Dean ></a>
+                    </div>
+                  </li>
+
+                  <li class="dropdown">
+                    <button onclick="toggleDropdown(this)" class="dropbtn">
+                      Admission <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="./how-to-apply.html">Admission Process ></a>
+                    </div>
+                  </li>
+
+                  <li class="dropbtn">
+                    <a href="./Scholarships.html">Scholarships</a>
+                  </li>
+
+                  <li class="dropbtn">
+                    <a href="./Collaborations.html">Collaborations</a>
+                  </li>
+                  <li class="dropbtn">
+                    <a href="./academics.html">Academics</a>
+                  </li>
+
+                  <li class="dropdown">
+                    <button onclick="toggleDropdown(this)" class="dropbtn">
+                      Leadership <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="./board-of-advisors.html">Board of Advisors ></a>
+                      <a href="./mentoring-committee.html"
+                        >Mentoring Committee ></a
+                      >
+                    </div>
+                  </li>
+
+                  <li class="dropdown">
+                    <button onclick="toggleDropdown(this)" class="dropbtn">
+                      Faculty <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="./faculty.html">Faculty Profiles ></a>
+                      <a href="./achievements.html">Faculty Achievements ></a>
+                      <a href="#">Guest Lecturers ></a>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <button onclick="toggleDropdown(this)" class="dropbtn">
+                      Campus Life <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="./Campus.html">Infrastructure ></a>
+                      <a href="#">Campus Support ></a>
+                      <a href="#">Club's and Committees ></a>
+                    </div>
+                  </li>
+
+                  <li class="dropbtn">
+                    <a href="#">Governance and Policy</a>
+                  </li>
+                  <li class="dropbtn">
+                    <a href="./Contact-Us.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="menu-main-right">
+              <div class="menu-main-right-row1">
+                <img src="./public/group-frame@2x.jpg" alt="image" />
+              </div>
+              <div class="menu-main-right-row2">
+                <div class="image-box">
+                  <div class="img-box-content">
+                    <div>
+                      <p><span>18 Nov 2023</span><span>Guest lecture</span></p>
+                      <h3>Guest Lecture: Legal Awareness Rally</h3>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                  <div class="img-box-img">
+                    <img src="./public/rectangle-4@2x.jpg" alt="image" />
+                  </div>
+                </div>
+                <div class="image-box">
+                  <div class="img-box-content">
+                    <div>
+                      <p>18 Nov 2023</p>
+                      <h3>Legal Literacy Camp</h3>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                  </div>
+                  <div class="img-box-img">
+                    <img src="./public/image-93@2x.jpg" alt="image" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- menu-ends-here -->
+        <main class="main-landing">
+          <div class="header-main">
+            <div class="topbar">
+              <p>+91 7358201234 | admissions@vmls.edu.in</p>
+              <div class="topbar-right-img" id="right-menu">
+                <img src="./public/two-line-menu.svg" alt="image" />
+                <p>MENU</p>
+              </div>
+            </div>
+            <div class="header">
+              <img
+                class="header-img-01"
+                src="./public/Group-533.png"
+                alt="image"
+              />
+              <img
+                class="header-img-02"
+                src="./public/asset-44x-1@2x.png"
+                alt="image"
+              />
+            </div>
+          </div>
+          <div class="landing-main-screen">
+            <!-- red-banner -->
+            <div class="red-banner">
+              <h3>Law School of the Future</h3>
+            </div>
+            <!-- red-banner -->
+            <div class="main-screen-parent">
+              <div class="main-screen">
+                <div class="main-screen-left">
+                  <img src="./public/image-7@2x.png" alt="image" />
+                  <p>
+                    VMLS is being mentored by O.P. Jindal Global University (an
+                    Institution of Eminence) and Jindal Global Law School under
+                    an institutional mentorship agreement.
+                  </p>
+                  <img src="./public/group-454@2x.png" alt="image" />
+                </div>
+                <div class="main-screen-right">
+                  <img src="./public/image-8@2x.png" alt="image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="homepage">
+        <div class="home-sec-1">
+          <div class="homesec-1-row1">
+            <div class="homesec1-inner-column">
+              <div class="inner-column-row">
+                <div class="inner-column-row-img inner-column-row-img-hover">
+                  <img src="./assets/Frame-53139.png" alt="image" />
+                </div>
+                <div class="inner-column-row-img inner-column-row-img-hover">
+                  <img src="./assets/Frame-93.png" alt="image" />
+                </div>
+              </div>
+              <div class="inner-column-row ineer-row-hover-effect">
+                <a href="./Dr.A.Shanmugasundaram.html">
+                  <div class="inner-col inner-column-row-img-hover">
+                    <img src="./assets/Frame-53135.png" alt="image" /></div
+                ></a>
+                <a href="./Dr.A.S.Ganesan.html"
+                  ><div class="inner-col inner-column-row-img-hover">
+                    <img src="./assets/Frame-53136.png" alt="image" /></div
+                ></a>
+                <a href="./Dr.Anuradha-Ganesan.html"
+                  ><div class="inner-col inner-column-row-img-hover">
+                    <img src="./assets/image-100.png" alt="image" /></div
+                ></a>
+              </div>
+            </div>
+            <div class="homesec1-inner-column">
+              <div class="dean-img">
+                <img src="./assets/dean.png" alt="image" />
+              </div>
+              <div class="inner-cntnt">
+                <h3>From the Dean’s Desk</h3>
+                <p>
+                  At VMLS, we spend all our energies unraveling what the law
+                  school of the future means, and should aspire to achieve.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="homesec-1-row2">
+            <div class="image-row-hmsec-1-2">
+              <div class="homsec1-row2-innercolumn">
+                <img src="./assets/image12.png" alt="image" />
+              </div>
+              <div class="homsec1-row2-innercolumn">
+                <img src="./assets/Group-623.png" alt="image" />
+              </div>
+              <div class="homsec1-row2-innercolumn">
+                <img src="./assets/Group-624.png" alt="image" />
+              </div>
+              <div class="homsec1-row2-innercolumn">
+                <img src="./assets/Group-625.png" alt="image" />
+              </div>
+              <div class="homsec1-row2-innercolumn">
+                <img src="./assets/Group626.png" alt="image" />
+              </div>
+              <div class="homsec1-row2-innercolumn">
+                <img src="./assets/Group628.png" alt="image" />
+              </div>
+            </div>
+            <div class="homsec1-row2-innercolumn">
+              <h3>Board of Advisors</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- section-2 -->
+        <div class="home-sec-2">
+          <div class="hom-sec-2-row">
+            <img src="./assets/Frame89.png" alt="image" />
+          </div>
+          <div class="hom-sec-2-row">
+            <div class="home-sec-2-column">
+              <div class="column">
+                <div class="top-heading">
+                  <p><span>18 Nov 2023</span><span>Guest lecture</span></p>
+                  <h3>Guest Lecture: Legal Awareness Rally</h3>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="column">
+                <img src="./assets/mobile/1.png" alt="image" />
+              </div>
+            </div>
+            <div class="home-sec-2-column">
+              <div class="top-heading">
+                <p><span>18 Nov 2023</span><span>FACULTY ACHIEVEMENT</span></p>
+                <h3>Diverse threads: exploring the fabric of Indian society</h3>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- section-3 -->
+        <div class="home-sec-3">
+          <div class="home-sec-3-row">
+            <h3>Collaborations</h3>
+          </div>
+          <div class="home-sec-3-row">
+            <div class="sec-3-row-column">
+              <h3>Institutional</h3>
+              <div class="slider">
+                <ul>
+                  <li>
+                    <img src="./assets/logo/1.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/2.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/3.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/4.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/5.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/6.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/7.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/8.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/9.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/10.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/11.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/12.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/13.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/14.png" alt="" />
+                  </li>
+                  <li>
+                    <img src="./assets/logo/15.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="sec-3-row-column">
+              <div class="inner-column">
+                <h3>Academic</h3>
+                <div class="sec-3logos">
+                  <div class="sec3-logo-clmn">
+                    <img src="./assets/O.P1.png" alt="image" />
+                  </div>
+                  <div class="sec3-logo-clmn">
+                    <img src="./assets/Group454.png" alt="image" />
+                  </div>
+                </div>
+                <p>
+                  VMLS is being mentored by O.P. Jindal Global University (an
+                  Institution of Eminence) and Jindal Global Law School under an
+                  institutional mentorship agreement.
+                </p>
+              </div>
+              <div class="inner-column">
+                <img src="./assets/Frame-53245.png" alt="image" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- section-4 -->
+        <div class="home-sec-4">
+          <div class="section-4-row">
+            <h3>News and Events</h3>
+          </div>
+          <div class="section-4-row">
+            <div class="column-4">
+              <a class="read-more" href="./news-and-events.html">READ MORE</a>
+              <div class="inner-4 inner-4-content inner-4-content1">
+                <div class="top-content-4">
+                  <p>25 JAN 2024</p>
+                  <h3>Launch of VMLS International Law Review</h3>
+                </div>
+                <p>
+                  Embark on a journey of legal scholarship and global discourse
+                  with the inaugural launch of VMLS International Law Review.
+                </p>
+              </div>
+              <div class="inner-4">
+                <img src="./assets/mobile/2.png" alt="image" />
+              </div>
+            </div>
+            <div class="column-4">
+              <a class="read-more" href="./news-and-events.html">READ MORE</a>
+              <div class="inner-4 inner-4-content inner-4-content2">
+                <div class="top-content-4">
+                  <p>18 Nov 2023</p>
+                  <h3>1st CJT Lecture</h3>
+                </div>
+                <p>
+                  Dive into the transformative journey of court digitization
+                  with VMLS's Center for Justice through Technology. Join us as
+                  we explore the visionary strides of Justice S. Muralidhar.
+                </p>
+              </div>
+              <div class="inner-4">
+                <img src="./assets/mobile/1.png" alt="image" />
+              </div>
+            </div>
+          </div>
+          <div class="section-4-row section-4-row2">
+            <div class="img-4">
+              <img src="./assets/Frame53247.png" alt="image" />
+            </div>
+            <div class="sec-4cntntn">
+              <p>25 JAN 2024</p>
+              <h3>Arram Magazine</h3>
+              <p>
+                Arram" – is a captivating chronicle of the remarkable events
+                that shaped the past year at VMLS Law School. From student
+                achievements to faculty insights, infrastructure showcases, and
+                groundbreaking innovations, "Arram" is your window into our
+                collective resilience and unwavering commitment to legal
+                education.
+              </p>
+            </div>
+          </div>
+          <div class="section-4-row">
+            <div class="column-4">
+              <a class="read-more" href="./news-and-events.html">READ MORE</a>
+              <div class="inner-4 inner-4-content inner-4-content3">
+                <div class="top-content-4">
+                  <p>18 Nov 2023</p>
+                  <h3>Legal Design Competition</h3>
+                </div>
+                <p>
+                  The FLIP CASE Legal Design Competition is an event that
+                  seamlessly blends legal expertise with cutting-edge
+                  technological innovation.
+                </p>
+              </div>
+              <div class="inner-4">
+                <img src="./assets/mobile/3.png" alt="image" />
+              </div>
+            </div>
+            <div class="column-4">
+              <a class="read-more" href="./news-and-events.html">READ MORE</a>
+              <div class="inner-4 inner-4-content inner-4-content4">
+                <div class="top-content-4">
+                  <p>18 Nov 2023</p>
+                  <h3>Legal Literacy Camp</h3>
+                </div>
+                <p>
+                  In commemoration of Constitutional Day, VMLS Global Tamil Law
+                  Center (GTLC) organized a legal literacy camp, aligning with
+                  the vision of Dr. B.R. Ambedkar to transform political
+                  democracy into social democracy.
+                </p>
+              </div>
+              <div class="inner-4">
+                <img src="./assets/mobile/4.png" alt="image" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- section-5 -->
+        <div class="home-section-5">
+          <div class="home-section-5-row">
+            <h3>Admission</h3>
+          </div>
+          <div class="home-section-5-row">
+            <!-- <div class="banner-img banner-img1">
+              <img src="./assets/Group661.png" alt="image" />
+            </div> -->
+            <img src="./assets/mobile/5.png" alt="image" />
+          </div>
+          <div class="home-section-5-row">
+            <div class="banner-img">
+              <img src="./assets/Group626(2).png" alt="image" />
+            </div>
+            <img src="./assets/image91.png" alt="image" />
+          </div>
+        </div>
+        <!-- section-6 -->
+        <div class="home-section-6" id="campus" data-aos="slide-right">
+          <div class="section-6-row">
+            <h3>Infrastructure</h3>
+          </div>
+          <div class="section-6-row" id="section-6-row-2">
+            <div class="column-infra">
+              <div class="image-infra">
+                <img src="./assets/infra1.jpg" alt="" />
+              </div>
+              <div class="float-infra">
+                <div class="link-infra">
+                  <a class="read-more2" href="./classroom.html">READ MORE</a>
+                </div>
+                <div class="inner-content-infra">
+                  <h4>Classroom</h4>
+                  <p>
+                    The classrooms of VMLS are a testament to modern educational
+                    advancements, blending technology with design to create an
+                    environment ripe for learning.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column-infra">
+              <div class="image-infra">
+                <img src="./assets/infra2.jpg" alt="" />
+              </div>
+              <div class="float-infra">
+                <div class="link-infra">
+                  <a class="read-more2" href="./atrium.html">READ MORE</a>
+                </div>
+                <div class="inner-content-infra">
+                  <h4>Atrium</h4>
+                  <p>
+                    The atrium of VMLS fosters an atmosphere that is both
+                    inviting and conducive to academic pursuits.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column-infra">
+              <div class="image-infra">
+                <img src="./assets/infra3.jpg" alt="" />
+              </div>
+              <div class="float-infra">
+                <div class="link-infra">
+                  <a class="read-more2" href="./main-building.html"
+                    >READ MORE</a
+                  >
+                </div>
+                <div class="inner-content-infra">
+                  <h4>Main Building</h4>
+                  <p>
+                    The main building of VMLS stands as a striking example of
+                    modern architecture, where functionality meets aesthetic
+                    precision
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column-infra">
+              <div class="image-infra">
+                <img src="./assets/infra4.jpg" alt="" />
+              </div>
+              <div class="float-infra">
+                <div class="link-infra">
+                  <a class="read-more2" href="./library.html">READ MORE</a>
+                </div>
+                <div class="inner-content-infra">
+                  <h4>Library</h4>
+                  <p>
+                    The VMLS Library represents a significant advancement in the
+                    integration of traditional library services with
+                    cutting-edge technology.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column-infra">
+              <div class="image-infra">
+                <img src="./assets/infra5.jpg" alt="" />
+              </div>
+              <div class="float-infra">
+                <div class="link-infra">
+                  <a class="read-more2" href="./moot-court.html">READ MORE</a>
+                </div>
+                <div class="inner-content-infra">
+                  <h4>Moot Court</h4>
+                  <p>
+                    The VMLS Moot Court is a state-of-the-art facility designed
+                    to simulate real-world legal proceedings, providing students
+                    with a practical environment to develop their advocacy
+                    skills
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column-infra">
+              <div class="image-infra">
+                <img src="./assets/infra6.jpg" alt="" />
+              </div>
+              <div class="float-infra">
+                <div class="link-infra">
+                  <a class="read-more2" href="./seminar-halls.html"
+                    >READ MORE</a
+                  >
+                </div>
+                <div class="inner-content-infra">
+                  <h4>Seminar Halls</h4>
+                  <p>
+                    The VMLS Seminar Hall is a modern facility designed to host
+                    a variety of academic and professional events.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column-infra">
+              <div class="image-infra">
+                <img src="./assets/infra7.jpg" alt="" />
+              </div>
+              <div class="float-infra">
+                <div class="link-infra">
+                  <a class="read-more2" href="./food-court.html">READ MORE</a>
+                </div>
+                <div class="inner-content-infra">
+                  <h4>Food Court</h4>
+                  <p>
+                    The VMLS food courts are designed to cater to the diverse
+                    culinary preferences and economic backgrounds of the student
+                    body.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column-infra">
+              <div class="image-infra">
+                <img src="./assets/infra8.jpg" alt="" />
+              </div>
+              <div class="float-infra">
+                <div class="link-infra">
+                  <a class="read-more2" href="./hostel.html">READ MORE</a>
+                </div>
+                <div class="inner-content-infra">
+                  <h4>Hostel</h4>
+                  <p>
+                    we provide a comfortable and secure student environment. Our
+                    hostel offers various room categories to suit your
+                    preferences, including single, double, triple, and
+                    four-sharing room occupancy
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- section-7 -->
+        <div class="home-section-7">
+          <div class="home-sec-7-row">
+            <h3>Centre of Excellence</h3>
+          </div>
+          <div class="home-sec-7-row">
+            <a class="read-more" href="./global-tamil-law-centre.html"
+              >READ MORE</a
+            >
+            <div class="column">
+              <div class="inner-clmn inner-clmn-icon1">
+                <img src="./assets/icons/1.png" alt="" />
+                <h3>Global Tamil law Centre</h3>
+              </div>
+              <div class="inner-clmn">
+                <img src="./assets/last/1.png" />
+              </div>
+            </div>
+            <div class="column">
+              <div class="inner-clmn">
+                <img src="./assets/last/2.png" />
+              </div>
+              <div class="inner-clmn">
+                <img src="./assets/last/3.png" />
+              </div>
+            </div>
+          </div>
+          <div class="home-sec-7-row">
+            <a
+              class="read-more"
+              href="./centre-for-justice-through-technology.html"
+              >READ MORE</a
+            >
+            <div class="column">
+              <div class="inner-clmn inner-clmn-icon2">
+                <img src="./assets/icons/4.png" alt="" />
+                <h3>Centre of Justice through technology</h3>
+              </div>
+              <div class="inner-clmn">
+                <img src="./assets/last/4.png" />
+              </div>
+            </div>
+            <div class="column">
+              <div class="inner-clmn">
+                <img src="./assets/last/5.png" />
+              </div>
+              <div class="inner-clmn">
+                <img src="./assets/last/6.png" />
+              </div>
+            </div>
+          </div>
+          <div class="home-sec-7-row">
+            <a
+              class="read-more"
+              href="./centre-for-the-promotion-of-international-law.html"
+              >READ MORE</a
+            >
+            <div class="column">
+              <div class="inner-clmn inner-clmn-icon3">
+                <img src="./assets/icons/2.png" alt="" />
+                <h3>Centre for the promotion of international law</h3>
+              </div>
+              <div class="inner-clmn">
+                <img src="./assets/last/10.png" />
+              </div>
+            </div>
+            <div class="column">
+              <div class="inner-clmn">
+                <img src="./assets/last/11.png" />
+              </div>
+              <div class="inner-clmn">
+                <img src="./assets/last/12.png" />
+              </div>
+            </div>
+          </div>
+          <div class="home-sec-7-row">
+            <a class="read-more" href="./centre-for-maritime-law.html"
+              >READ MORE</a
+            >
+            <div class="column">
+              <div class="inner-clmn inner-clmn-icon4">
+                <img src="./assets/icons/3.png" alt="" />
+                <h3>Maritime Law</h3>
+              </div>
+              <div class="inner-clmn">
+                <img src="./assets/last/8.png" />
+              </div>
+            </div>
+            <div class="column">
+              <div class="inner-clmn">
+                <img src="./assets/last/9.png" />
+              </div>
+              <div class="inner-clmn">
+                <img src="./assets/last/10.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="testimonials">
+          <div class="row-testimonial" data-aos="slide-right">
+            <div class="testimonial-column">
+              <p>
+                VMLS boasts exceptional infrastructure that greatly enhances the
+                learning experience. The state-of-the-art library, modern
+                classrooms, and impressive moot court hall provide students with
+                invaluable resources and practical skills. The college's
+                commitment to safety and security further ensures a conducive
+                environment for academic growth. Highly recommended!
+              </p>
+              <div class="testimonial-inner">
+                <img src="./assets/Frame34.png" alt="image" />
+                <span>
+                  <h3>Keerthana R</h3>
+                  <p>B.Com LLB. (Hons.) II Year</p>
+                </span>
+              </div>
+            </div>
+            <div class="testimonial-column">
+              <p>
+                Studying at VMLS has been a transformative experience. The
+                faculty's expertise and dedication to our success are
+                unparalleled. The rigorous curriculum, combined with practical
+                training through Moot Court competitions and Internships, has
+                equipped me with the skills and confidence to excel in the legal
+                profession.
+              </p>
+              <div class="testimonial-inner">
+                <img src="./assets/Frame-testi-2.png" alt="image" />
+                <span>
+                  <h3>Tharaneesh Kannaa AC</h3>
+                  <p>B.A LLB. (Hons.) II Year</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row-testimonial">
+            <div class="testimonial-column">
+              <p>
+                Attending VMLS has been an enriching experience. The diverse
+                student body, collaborative learning environment, and vibrant
+                extracurricular activities have fostered a well-rounded legal
+                education.
+              </p>
+              <div class="testimonial-inner">
+                <img src="./assets/frame-testi-3.png" alt="image" />
+                <span>
+                  <h3>M.Navitha</h3>
+                  <p>B.A LLB. (Hons.) II Year</p>
+                </span>
+              </div>
+            </div>
+            <div class="testimonial-column">
+              <p>
+                The college's strong focus on ethical values, professionalism,
+                and social justice has instilled in me a deep sense of
+                responsibility as a future lawyer. The outstanding faculty,
+                state-of-the-art facilities, and interactive teaching
+                methodologies have prepared me to tackle complex legal issues
+                with confidence.
+              </p>
+              <div class="testimonial-inner">
+                <img src="./assets/neevetha-n.png" alt="image" />
+                <span>
+                  <h3>Neevetha N</h3>
+                  <p>LLB. (Hons.) II Year</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="footer-row">
+            <img
+              class="footer-logo"
+              src="./assets/last/fotter-logo.png"
+              alt="image"
+            />
+            <h3>Law School of the Future</h3>
+            <div class="social-links-footer">
+              <a href="#">
+                <img src="./assets/last/icons8-facebook 1.png" alt="image" />
+              </a>
+              <a href="#">
+                <img src="./assets/last/icons8-instagram 1.png" alt="image" />
+              </a>
+              <a href="#">
+                <img src="./assets/last/Vector.png" alt="image" />
+              </a>
+              <a href="#">
+                <img src="./assets/last/icons8-twitter 1.png" alt="image" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-row address-row">
+            <div class="foot-clmn">
+              <div class="heading-foot">
+                <span
+                  ><img src="./assets/last/map.png" alt="image" />
+                  <h4>VMLS Campus Address</h4></span
+                >
+              </div>
+              <p>
+                Nayaka Nagar, Rajiv Gandhi Salai (Old Mahabalipuram Road),
+                Paiyanoor, Chennai- 603104 Tamil Nadu, India
+              </p>
+            </div>
+            <div class="foot-clmn">
+              <div class="heading-foot">
+                <span
+                  ><img src="./assets/last/map.png" alt="image" />
+                  <h4>Corporate Office Address</h4></span
+                >
+              </div>
+              <p>
+                No: 213, Old No: 160, Behind Doshi Tower, Poonamallee High Road,
+                Kilpauk, Chennai- 600 010, Tamil Nadu, India
+              </p>
+            </div>
+          </div>
+          <div class="footer-row contact-us">
+            <h4>Contact Us</h4>
+            <div class="heading-foot">
+              <span
+                ><img src="./assets/last/phone.png" alt="image" />
+                <p>18003094350 | 7358201234</p></span
+              >
+            </div>
+            <div class="heading-foot">
+              <span
+                ><img src="./assets/last/email.png" alt="image" />
+                <p>admissions@vmls.edu.in</p></span
+              >
+            </div>
+          </div>
+          <div class="footer-row">
+            <div class="footer-row">
+              <h3>Get to know us</h3>
+              <form action="#" method="post">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your Name*"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address*"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your Mobile number"
+                  />
+                </div>
+                <div class="form-group">
+                  <select id="state" name="state" placeholder="Select State">
+                    <option value="">Select State</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  </select>
+                  <select id="city" name="city" placeholder="Select City">
+                    <option value="">Select City</option>
+                    <option value="Ahmedabad">Ahmedabad</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <span class="foot-bottom">
+            <a href="#">Refund Policy</a>
+            <a href="#">Anti Ragging Committee</a>
+            <a href="#">Anti Ragging Measures</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <!-- mobile-screen-code -->
+
+    <!-- scripts-starts -->
+    <script src="./script/menu.js"></script>
+    <script src="./script/animate.js"></script>
+    <script src="./script/logoScroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      const sections = gsap.utils.toArray(".section");
+      const stInstances = [];
+
+      sections.forEach((section, index) => {
+        const panel = Array.from(section.querySelectorAll(".panel"));
+
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: section,
+            pin: true,
+            scrub: 1,
+            invalidateOnRefresh: true,
+            end: () =>
+              `+=${section.scrollWidth - document.documentElement.clientWidth}`,
+          },
+        });
+
+        tl.to(
+          panel,
+          {
+            x: () =>
+              `-${
+                section.scrollWidth - document.documentElement.clientWidth
+              }px`,
+            duration: 1,
+            ease: "none",
+          },
+          0
+        );
+
+        tl.to({}, { duration: 0.1 });
+        stInstances.push(tl.scrollTrigger);
+      });
+
+      document.querySelectorAll("[data-trigger]").forEach((item, index) => {
+        item.addEventListener("click", (event) => {
+          event.preventDefault();
+          const st = stInstances[index];
+          gsap.to(window, { scrollTo: { x: st.start }, duration: 1 });
+          st.animation.progress(0);
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

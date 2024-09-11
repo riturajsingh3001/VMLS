@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.landing {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.landing p {
+  font-family: var(--font-raleway);
+}
+.main-landing {
+  width: 100%;
+  height: 100%;
+}
+.topbar {
+  padding: 1.1vh 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 7.7vh;
+}
+.header-main {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.header {
+  padding: 1.1vh 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 12vh;
+  background-color: rgba(255, 255, 255, 1);
+}
+.header .header-img-01 {
+  width: 20vw;
+}
+.header-img-02 {
+  width: 13vw;
+}
+.topbar-right-img {
+  display: flex;
+  align-items: center;
+  column-gap: 0.8vw;
+  background-color: white;
+  padding: 0.5vw 1vw;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.topbar > p {
+  color: var(--color-brown);
+  font-weight: 500;
+}
+.topbar p {
+  font-size: 1vw;
+}
+.topbar img {
+  width: 2vw;
+  height: 1vw;
+}
+.landing-main-screen {
+  height: 100%;
+  display: flex;
+  align-items: end;
+  width: 100%;
+  background-image: url("../public/frame-1@3x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.main-screen-parent {
+  background-color: #f5f5f5;
+}
+.main-screen {
+  padding: 1.1vh 6vw;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 100%;
+  place-items: center;
+}
+.main-screen-left img {
+  width: 6vw;
+  mix-blend-mode: darken;
+}
+.main-screen-left p {
+  font-size: 1vw;
+}
+.main-screen-right img {
+  width: 25vw;
+}
+.main-screen-left {
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto 80% auto;
+  place-items: center;
+}
+.main-screen-right {
+  border-left: solid 1px #a6a6a6;
+}
+.red-banner {
+  background-color: var(--color-brown);
+  padding: 4vh 4vw;
+  color: #fff;
+  position: absolute;
+  right: 0vh;
+  bottom: 20vh;
+  width: 25vw;
+}
+.red-banner h3 {
+  font-size: 3vw;
+  font-weight: 400;
+}
+@media only screen and (max-width: 1100px) {
+  .header-main {
+    position: relative !important;
+    width: 100%;
+    z-index: 1;
+  }
+  .topbar {
+    height: 40px !important;
+  }
+  .header {
+    height: 60px !important;
+  }
+  .header .header-img-01 {
+    width: 50vw !important;
+  }
+  .header-img-02 {
+    width: 24vw !important;
+  }
+  .topbar p {
+    font-size: 3vw !important;
+  }
+  .topbar-right-img p {
+    display: none !important;
+  }
+  .topbar img {
+    width: 9vw !important;
+    height: 7vw !important;
+  }
+  .topbar-right-img {
+    padding: 6px !important;
+    border-radius: 0 !important;
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
