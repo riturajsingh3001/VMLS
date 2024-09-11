@@ -5,7 +5,7 @@ body {
 
 :root {
   /* fonts */
-  --font-raleway: Raleway;
+  --font-raleway: "Inter", sans-serif;
   --font-imperator: Imperator;
 
   /* Colors */
