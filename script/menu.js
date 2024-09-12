@@ -2,11 +2,6 @@ const menus = document.querySelectorAll(".topbar-right-img");
 const closeBtns = document.querySelectorAll(".close-btn");
 const menuContents = document.querySelectorAll(".menu");
 
-// menus.forEach((menu, index) => {
-//   menu.addEventListener("click", function () {
-//     menuContents[index].style.left = "0";
-//   });
-// });
 menus.forEach((menu, index) => {
   menu.addEventListener("click", function () {
     menuContents[index].style.setProperty("left", "0", "important");
@@ -126,3 +121,27 @@ document.addEventListener("DOMContentLoaded", function () {
     phoneInput.setAttribute("placeholder", "Enter your Mobile number*");
   });
 });
+
+window.onload = function () {
+  // Get all image-box elements
+  const imageBoxes = document.querySelectorAll(
+    ".menu-main-right-row2 .image-box"
+  );
+
+  // Update the content of each image-box
+  imageBoxes.forEach((imageBox, index) => {
+    const textElement = imageBox.querySelector(".img-box-content > p");
+
+    if (textElement) {
+      if (index === 0) {
+        // Update the content for the first image-box
+        textElement.textContent =
+          "Dive into the transformative journey of court digitization with VMLS's Center for Justice through Technology. Join us as we explore the visionary strides of Justice S. Muralidhar.";
+      } else if (index === 1) {
+        // Update the content for the second image-box
+        textElement.textContent =
+          "In commemoration of Constitutional Day, VMLS Global Tamil Law Center (GTLC) organized a legal literacy camp, aligning with the vision of Dr. B.R. Ambedkar to transform political democracy into social democracy.";
+      }
+    }
+  });
+};
