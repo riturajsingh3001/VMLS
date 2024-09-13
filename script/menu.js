@@ -5,16 +5,19 @@ const menuContents = document.querySelectorAll(".menu");
 menus.forEach((menu, index) => {
   menu.addEventListener("click", function () {
     menuContents[index].style.setProperty("left", "0", "important");
+    menuContents[index].classList.add("active");
   });
 });
 
-closeBtns.forEach((btn) => {
+closeBtns.forEach((btn, index) => {
   btn.addEventListener("click", function () {
     menuContents.forEach((content) => {
       content.style.left = "-200vw";
     });
+    menuContents[index].classList.remove("active");
   });
 });
+
 // logo-link
 let headerImgs = document.querySelectorAll(".header-img-02");
 
