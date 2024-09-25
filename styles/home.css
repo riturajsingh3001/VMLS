@@ -171,7 +171,6 @@
 .homesec-1-row2 > div:nth-child(2) p {
   font-size: 0.9vw;
   font-weight: normal;
-  text-align: justify;
 }
 .image-row-hmsec-1-2 {
   display: flex;
@@ -239,7 +238,6 @@
 }
 .hom-sec-2-row p {
   font-size: 0.9vw;
-  text-align: justify;
 }
 .hom-sec-2-row h3 {
   font-size: 1.4vw;
