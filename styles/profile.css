@@ -459,7 +459,7 @@ p {
   font-size: 1vw;
   font-weight: normal;
   border-right: solid 1px #828282;
-  padding-right: 2vw;
+  padding-right: 1vw;
 }
 .foot-bottom a:last-child {
   border: none;
