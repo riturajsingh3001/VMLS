@@ -20,13 +20,13 @@
 .committee > .row p {
   font-size: 0.8vw;
   font-weight: normal;
-  text-align: justify;
+  text-align: left;
 }
 .committee > .row:nth-child(1) {
   width: 53%;
 }
 .committee > .row:nth-child(2) {
-  width: 78%;
+  width: 92%;
   position: relative;
 }
 .committee > .row:nth-child(1) .column {
@@ -72,7 +72,7 @@
   font-size: 1.2vw;
 }
 .committee > .row:nth-child(2) .column:nth-child(1) {
-  width: 3.5%;
+  width: 3%;
   height: 100%;
   background-color: #d9d9d9;
   display: flex;
@@ -345,11 +345,11 @@
 .foot-bottom a:last-child {
   border: none;
 }
-@media only screen and (min-width:768px) and (max-width:1101px){
-    #committee-2nd-row .column .inner-column .content {
-        width: 50% !important;
-    }
-    .committee > .row:nth-child(1) .column .inner-column:nth-child(1) {
-        height: 660px !important;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1101px) {
+  #committee-2nd-row .column .inner-column .content {
+    width: 50% !important;
+  }
+  .committee > .row:nth-child(1) .column .inner-column:nth-child(1) {
+    height: 660px !important;
+  }
 }

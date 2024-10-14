@@ -163,6 +163,8 @@
     padding-top: 44px !important;
   }
 }
+
+/* styles\iqac.css */
 .row-iqac {
   display: flex;
   flex-direction: column;
@@ -184,7 +186,8 @@
   color: var(--color-brown);
   font-weight: 600;
 }
-.row-iqac .row-inner-content-div h3 {
+.row-iqac .row-inner-content-div h3,
+.row-workshops-seminar h3 {
   font-size: clamp(18px, 1.5vw, 1.5vw);
   color: var(--color-brown);
   font-weight: 500;
@@ -198,6 +201,67 @@
 .row-iqac .row-inner-content-div ol {
   padding-left: clamp(20px, 2vw, 2vw);
 }
+/* From Uiverse.io by reshades */
+.button {
+  background-color: #ffffff00;
+  color: var(--color-brown);
+  width: 210px;
+  height: 2.9em;
+  border: var(--color-brown) 0.2em solid;
+  border-radius: 11px;
+  text-align: right;
+  transition: all 0.6s ease;
+}
+
+.button:hover {
+  background-color: var(--color-brown);
+  cursor: pointer;
+  color: #fff;
+}
+
+.button svg {
+  width: 1.6em;
+  margin: -0.2em 0.8em 1em;
+  position: absolute;
+  display: flex;
+  transition: all 0.6s ease;
+}
+
+.button:hover svg {
+  transform: translateX(5px);
+}
+
+.text {
+  margin: 0 1.5em;
+}
+/* workshop-seminar-css */
+.row-workshops-seminar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(20px, 3vw, 3vw);
+}
+.column-workshops-seminar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: clamp(20px, 3vh, 3vh);
+}
+.column-workshops-seminar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.column-workshops-seminar:hover img {
+  transform: scale(1.1);
+}
+.image-box-workshop-seminar {
+  overflow: hidden;
+  border-radius: 10px;
+}
+/* deans-page-css */
 #deans-sec {
   position: relative;
   background-color: #f2efea;
@@ -335,6 +399,9 @@
 
   #popup-video {
     height: 250px;
+  }
+  .row-workshops-seminar {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .video-overlay {
