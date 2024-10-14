@@ -225,6 +225,12 @@
 .mobile-section {
   display: none;
 }
+.faculty-nopadding.ml-8 {
+  margin-left: -8vw;
+}
+.faculty-nopadding.ml-50 {
+  margin-left: -50vw;
+}
 @media only screen and (max-width: 1100px) {
   .section.horizontal {
     display: none !important;

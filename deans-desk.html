@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Deans Desk</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/dropdown.css" />
+    <link rel="stylesheet" href="./styles/coj.css" />
+    <link rel="stylesheet" href="./styles/news.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Imperator%3A400"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <style>
+      @font-face {
+        font-family: "Imperator";
+        src: url("/public/Imperator.ttf");
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="landing" id="coj-landing">
+      <!-- menu-starts-here -->
+      <div class="menu" id="menu-content">
+        <div class="menu-main">
+          <!-- close-button -->
+          <div class="close-btn" id="close-btn">
+            <img src="./public/x.svg" alt="image" />
+            <p>CLOSE</p>
+          </div>
+          <!-- close-button -->
+          <div class="menu-main-left wow bounceInUp">
+            <!-- arrow-image -->
+            <a class="menu-arrow-img" href="#"
+              ><img src="./public/frame-68@2x.png" alt="image"
+            /></a>
+            <!-- arrow-image -->
+            <div class="menu-top">
+              <ul class="menu-top-1a">
+                <li class="dropbtn">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    About <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./About-VMRF.html">About VMRF ></a>
+                    <a href="./about.html">About VMLS ></a>
+                    <a href="./Dr.A.Shanmugasundaram.html">Founder ></a>
+                    <a href="./Dr.A.S.Ganesan.html">Chancellor ></a>
+                    <a href="./Dr.AnanthPadmanabhan.html">Dean ></a>
+                  </div>
+                </li>
+
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    Admission <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./how-to-apply.html">Admission Process ></a>
+                  </div>
+                </li>
+
+                <li class="dropbtn">
+                  <a href="./Scholarships.html">Scholarships</a>
+                </li>
+
+                <li class="dropbtn">
+                  <a href="./Collaborations.html">Collaborations</a>
+                </li>
+                <li class="dropbtn">
+                  <a href="./academics.html">Academics</a>
+                </li>
+
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    Leadership <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./board-of-advisors.html">Board of Advisors ></a>
+                    <a href="./mentoring-committee.html"
+                      >Mentoring Committee ></a
+                    >
+                  </div>
+                </li>
+
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    Faculty <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./faculty.html">Faculty Profiles ></a>
+                    <a href="./achievements.html">Faculty Achievements ></a>
+                    <a href="#">Guest Lecturers ></a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    Campus Life <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./Campus.html">Infrastructure ></a>
+                    <a href="#">Campus Support ></a>
+                    <a href="#">Club's and Committees ></a>
+                  </div>
+                </li>
+
+                <li class="dropbtn">
+                  <a href="#">Governance and Policy</a>
+                </li>
+                <li class="dropbtn">
+                  <a href="../Contact-Us.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-main-right">
+            <div class="menu-main-right-row1">
+              <img src="./public/group-frame@2x.jpg" alt="image" />
+            </div>
+            <div class="menu-main-right-row2">
+              <div class="image-box">
+                <div class="img-box-content">
+                  <div>
+                    <p><span>18 Nov 2023</span><span>Guest lecture</span></p>
+                    <h3>Guest Lecture: Legal Awareness Rally</h3>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+                <div class="img-box-img">
+                  <img src="./public/rectangle-4@2x.jpg" alt="image" />
+                </div>
+              </div>
+              <div class="image-box">
+                <div class="img-box-content">
+                  <div>
+                    <p>18 Nov 2023</p>
+                    <h3>Legal Literacy Camp</h3>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                </div>
+                <div class="img-box-img">
+                  <img src="./public/image-93@2x.jpg" alt="image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu-ends-here -->
+      <main class="main-landing">
+        <div class="header-main">
+          <div class="topbar" data-aos="slide-right">
+            <p>+91 7358201234 | admissions@vmls.edu.in</p>
+            <div class="topbar-right-img" id="right-menu">
+              <img
+                class="desktop-bar"
+                src="./public/Group-619.png"
+                alt="image"
+              />
+              <img
+                class="mobile-bar"
+                src="./public/two-line-menu.svg"
+                alt="image"
+              />
+              <p>MENU</p>
+            </div>
+          </div>
+          <div class="header" data-aos="slide-right" id="bg-white-5">
+            <img
+              class="header-img-01"
+              src="./public/Group-533.png"
+              alt="image"
+            />
+            <img
+              class="header-img-02"
+              src="./public/asset-44x-1@2x.png"
+              alt="image"
+            />
+          </div>
+        </div>
+      </main>
+    </div>
+    <section id="deans-sec">
+      <div class="deans-row-top">
+        <h2>From the Dean's Desk</h2>
+      </div>
+      <div class="deans-bottom-row">
+        <div class="deans-column">
+          <deans class="profile">
+            <img src="./faculty/new/dd.jpg" alt="dean" />
+            <h3>Dr. Ananth Padmanabhan</h3>
+            <p>Dean</p>
+          </deans>
+          <deans class="profile profile2">
+            <h3>Academic Qualifications</h3>
+            <ul>
+              <li>
+                MSx Sloan Fellow, Business Administration, and Management,
+                Stanford University Graduate School of Management, USA
+              </li>
+              <li>
+                SJD and LL.M, University of Pennsylvania Carey Law School, USA
+              </li>
+              <li>
+                B.A., LL.B (Hons.), National Law School of India University
+              </li>
+            </ul>
+          </deans>
+        </div>
+        <div class="deans-column profile">
+          <p>
+            A professional law degree has become increasingly appealing to
+            students since India’s liberalization in the early 90s, driven by
+            the opening of domestic markets, the rise in global trade, and the
+            complexities of the new economic order. This spurred demand for
+            smart, articulate, and competent professionals to lead in areas like
+            mergers and acquisitions, private equity, venture capital
+            investments, offshore tax structures, and complex commercial
+            transactions. Consequently, national law schools and five-year
+            programs gained prominence as law firms and companies sought to hire
+            new graduates with attractive pay packages.
+          </p>
+          <p>
+            However, subsequent economic and socio-political changes have
+            necessitated a reevaluation of legal education. The increasing
+            presence of technology and automation, the need for reimagining
+            dispute resolution, the expansion of a regulatory state, and the
+            weakening of strict separation between disciplines require new
+            models of legal education. While earlier, new graduates were hired
+            for due diligence in law firms, today, AI-powered assistants handle
+            such tasks. Yet, there remains a growing need for talent and
+            leadership at the middle and top levels due to the increasing
+            complexity of the legal and regulatory architecture.
+          </p>
+          <p>
+            Litigation in courts remains a major career option, but dispute
+            management through alternative dispute resolution methods like
+            commercial arbitration and mediation is increasingly being sought
+            after. To fully leverage this demand, legal education must
+            incorporate new skills, including data literacy and a basic
+            understanding of business and governance processes. The job market
+            is also undergoing structural changes with the rise of the gig
+            economy, offering exciting work and rewards for those who manage
+            time and network effectively.
+          </p>
+          <p>
+            VMLS’ law degree is designed to meet these new challenges by molding
+            young minds through a pedagogical process that considers these
+            changes and equips them with new skills and professional
+            capabilities. At VMLS, we value innovation in legal education,
+            placing considerable emphasis on course design that addresses the
+            identified skill gaps and experiential learning models that provide
+            students with hands-on exposure to the professional world.
+          </p>
+          <p>
+            Our faculty comprises a mix of legal scholars and practitioners who
+            excel in research and training. We envision the teacher as a
+            facilitator guiding students through the learning process. Our
+            well-funded teaching support unit is committed to integrating
+            cutting-edge teaching methods into our daily classroom experience.
+            We also aim to create tie-ups with foreign universities for exchange
+            programs and joint research initiatives.
+          </p>
+          <p>
+            Effective communication is crucial for a successful legal career.
+            VMLS’ Communications and English Language Lab (CELL) provides
+            foundational communication skills, including grammar, reading,
+            writing, and public speaking. We offer a unique curriculum and
+            teaching methods to support learners who may have limited exposure
+            to English as a working language.
+          </p>
+          <h3>Central Themes Shaping Legal Education at VMLS</h3>
+          <ol>
+            <li>Technology Integration</li>
+            <li>
+              The dominant presence of technology and its impact on legal
+              systems and frameworks necessitate a focus on technology and
+              technology policy as part of the legal curriculum. From basics to
+              advanced concepts, students gain a comprehensive understanding of
+              the legal and regulatory frameworks governing technology. Courses
+              integrate technology into core subjects like constitutional law,
+              criminal law, and contracts, with electives covering areas like
+              data protection and regulation of the digital economy. Our
+              clinical courses equip students with technology licensing skills
+              and an understanding of policy-making.
+            </li>
+            <li>Alternate Dispute Resolution (ADR)</li>
+            <li>
+              ADR methods are increasingly central to dispute resolution
+              strategies. The growth of institutions conducting professional ADR
+              has made these methods primary in commercial settings. Courts have
+              also adopted innovative ADR strategies, such as commercial courts
+              deploying informal strategies before trial. Our curriculum
+              captures these skills, preparing students for diverse settings,
+              from labor mediation to international commercial arbitration. The
+              Global Tamil Law Centre (GTLC) also supports this vision by
+              addressing challenges pertaining to access to justice within the
+              State of Tamil Nadu.
+            </li>
+            <li>Regulatory State</li>
+            <li>
+              The rise of the regulatory state impacts the role of lawyers,
+              requiring a reevaluation of core courses like constitutional and
+              administrative law. Lawyers now engage extensively with regulatory
+              bodies, guiding regulated entities on the applicable laws and
+              regulations. A sound understanding of jurisprudence, economic and
+              political thought, and behavioral aspects of governance is
+              essential to perform this role. VMLS’ curriculum is structured to
+              meet these demands.
+            </li>
+            <li>Internationalization and Comparative Law</li>
+            <li>
+              Internationalization and comparative law have become integral to
+              legal education. Policies are shaped by international pressures,
+              and legal principles from across the globe inform domestic law.
+              Our curriculum exposes students to fundamental themes and global
+              debates, preparing them to navigate both Indian and international
+              legal landscapes. The Centre for the Promotion of International
+              Law exemplifies our commitment, with initiatives like an e-journal
+              focusing on present-day international conflict and guest lectures
+              on sustainable growth standing out in this regard.
+            </li>
+          </ol>
+          <p>
+            VMLS is committed to excellence through inclusivity and shaping a
+            pioneering model in Indian legal education. Our faculty and support
+            systems nurture the best in each student, promoting collaboration
+            and problem-solving. We prepare students to generate maximal impact
+            in their careers, fulfilling the promise of a comprehensive and
+            forward-thinking legal education. We look forward to support from
+            all leaders of the bench and the bar in fulfilling this vision.
+          </p>
+          <div>
+            <p>Yours sincerely,</p>
+            <p>Dr. Ananth Padmanabhan</p>
+            <p>Dean, VMLS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div
+        class="footer coj-foot scholarship-foot"
+        id="contact-us"
+        data-aos="slide-right"
+      >
+        <div class="footer-row">
+          <img
+            class="foot-logo"
+            src="./assets/last/fotter-logo.png"
+            alt="image"
+          />
+          <h3>Law School of the Future</h3>
+          <div class="social-links social-links-footer">
+            <a href="https://www.facebook.com/Vmlschennai" target="_blank">
+              <img src="./assets/last/icons8-facebook 1.png" alt="image" />
+            </a>
+            <a
+              href="https://instagram.com/vmls_chennai?igshid=OGQ5ZDc2ODk2ZA=="
+              target="_blank"
+            >
+              <img src="./assets/last/icons8-instagram 1.png" alt="image" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/vmlschennai/"
+              target="_blank"
+            >
+              <img src="./assets/last/Vector.png" alt="image" />
+            </a>
+            <a href="https://twitter.com/Vmlschennai" target="_blank">
+              <img src="./assets/last/icons8-twitter 1.png" alt="image" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-row address-row">
+          <div class="foot-clmn">
+            <div class="heading-foot">
+              <span
+                ><img src="./assets/last/map.png" alt="image" />
+                <h4>VMLS Campus Address</h4></span
+              >
+            </div>
+            <p>
+              Nayaka Nagar, Rajiv Gandhi Salai (Old Mahabalipuram Road),
+              Paiyanoor, Chennai- 603104 Tamil Nadu, India
+            </p>
+          </div>
+          <div class="foot-clmn">
+            <div class="heading-foot">
+              <span
+                ><img src="./assets/last/map.png" alt="image" />
+                <h4>Corporate Office Address</h4></span
+              >
+            </div>
+            <p>
+              No: 213, Old No: 160, Behind Doshi Tower, Poonamallee High Road,
+              Kilpauk, Chennai- 600 010, Tamil Nadu, India
+            </p>
+          </div>
+        </div>
+        <div class="footer-row contact-us">
+          <h4>Contact Us</h4>
+          <div class="heading-foot">
+            <span
+              ><img src="./assets/last/phone.png" alt="image" />
+              <p>18003094350 | 7358201234</p></span
+            >
+          </div>
+          <div class="heading-foot">
+            <span
+              ><img src="./assets/last/email.png" alt="image" />
+              <p>admissions@vmls.edu.in</p></span
+            >
+          </div>
+        </div>
+        <div class="footer-row">
+          <h3>Get to know us</h3>
+          <form action="#" method="post">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your Name*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your Mobile number"
+              />
+            </div>
+            <div class="form-group">
+              <select id="state" name="state" placeholder="Select State">
+                <option value="">Select State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+              </select>
+              <select id="city" name="city" placeholder="Select City">
+                <option value="">Select City</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        <span class="foot-bottom">
+          <a href="#">Refund Policy</a>
+          <a href="#">Anti Ragging Committee</a>
+          <a href="#">Anti Ragging Measures</a>
+        </span>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="./script/menu.js"></script>
+    <script src="./script/dropdown.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

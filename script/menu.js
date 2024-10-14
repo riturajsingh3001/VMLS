@@ -125,13 +125,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Update the content of each image-box of full-menu
 window.onload = function () {
   // Get all image-box elements
   const imageBoxes = document.querySelectorAll(
     ".menu-main-right-row2 .image-box"
   );
 
-  // Update the content of each image-box
   imageBoxes.forEach((imageBox, index) => {
     const textElement = imageBox.querySelector(".img-box-content > p");
 
@@ -148,3 +148,83 @@ window.onload = function () {
     }
   });
 };
+
+// iqac footer link insertion
+window.onload = function () {
+  const footBottom = document.querySelector(".foot-bottom");
+
+  const newLink = document.createElement("a");
+  newLink.href = "iqac.html";
+  newLink.textContent = "IQAC";
+
+  footBottom.insertBefore(newLink, footBottom.firstChild);
+};
+
+// video-popup-js
+// Function to extract video ID from a YouTube URL
+function getYouTubeID(url) {
+  const regExp =
+    /^.*(youtu.be\/|v\/|\/u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+  const match = url.match(regExp);
+  return match && match[2].length === 11 ? match[2] : null;
+}
+
+const videoThumbnails = document.querySelectorAll(".video-thumbnail");
+const popup = document.getElementById("video-popup");
+const popupVideo = document.getElementById("popup-video");
+const closePopup = document.querySelector(".close-popup");
+
+videoThumbnails.forEach((thumbnail) => {
+  thumbnail.addEventListener("click", function () {
+    const videoUrl = this.getAttribute("data-video-url");
+    const videoId = getYouTubeID(videoUrl); // Extract video ID from URL
+    if (videoId) {
+      popupVideo.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+      popup.style.display = "flex";
+    }
+  });
+});
+
+closePopup.addEventListener("click", function () {
+  popup.style.display = "none";
+  popupVideo.src = ""; // Stop the video
+});
+
+window.addEventListener("click", function (e) {
+  if (e.target === popup) {
+    popup.style.display = "none";
+    popupVideo.src = ""; // Stop the video
+  }
+});
+
+// hover video insfrastructure
+const infraColumns = document.querySelectorAll(".column-infra");
+
+infraColumns.forEach((column) => {
+  const img = column.querySelector("img");
+  const videoSrc = column.getAttribute("data-video"); // Get video source from data attribute
+
+  column.addEventListener("mouseenter", () => {
+    // Create a video element
+    const video = document.createElement("video");
+    video.src = videoSrc; // Use the video source from the data attribute
+    video.autoplay = true;
+    video.muted = true;
+    video.loop = true;
+    video.classList.add("video-overlay"); // Add styling class
+    video.playsInline = true; // Ensures compatibility on mobile
+
+    // Hide the image and append the video
+    img.style.display = "none";
+    column.querySelector(".image-infra").appendChild(video);
+  });
+
+  column.addEventListener("mouseleave", () => {
+    // Remove the video and show the image again
+    const video = column.querySelector("video");
+    if (video) {
+      video.remove();
+      img.style.display = "block";
+    }
+  });
+});
