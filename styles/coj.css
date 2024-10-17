@@ -69,7 +69,7 @@
   font-size: 1vw;
   display: flex;
   column-gap: 2vw;
-  height: 52vh;
+  height: auto;
 }
 .column-txt {
   padding: 0 7vw;
