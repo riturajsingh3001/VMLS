@@ -303,7 +303,7 @@ h4 {
     width: 100% !important;
   }
   .hta-section-2 .row:nth-child(2) .column .inner-column h3 {
-    font-size: 12vw !important;
+    font-size: 5vw !important;
   }
   .hta-section-2 .row:nth-child(2) .column .inner-column p {
     font-size: 3vw !important;
@@ -491,8 +491,8 @@ h4 {
 .foot-bottom a:last-child {
   border: none;
 }
-@media only screen and (min-width:768px) and (max-width:1101px){
-    .hta-section-2 .row:nth-child(2) .column .inner-column {
-        height: 30vh !important;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1101px) {
+  .hta-section-2 .row:nth-child(2) .column .inner-column {
+    height: 30vh !important;
+  }
 }
