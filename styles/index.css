@@ -27,7 +27,7 @@
 .header-main {
   position: fixed;
   width: 100%;
-  z-index: 99;
+  z-index: 1;
 }
 .header {
   padding: 1.1vh 6vw;

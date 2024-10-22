@@ -232,6 +232,7 @@
   font-size: 1.5vw;
   font-family: var(--font-raleway);
   margin-bottom: 2vh;
+  font-weight: 500;
 }
 .inner-news-main .row1 .content h4 {
   font-size: 1.2vw;
@@ -242,11 +243,15 @@
 .inner-news-main .row1 .content ul {
   padding-left: clamp(20px, 2vw, 2vw);
   margin-bottom: clamp(12px, 2vh, 2vh);
+  margin-top: clamp(12px, 2vh, 2vh);
 }
 .inner-news-main .row1 .content ol li,
 .inner-news-main .row1 .content ul li {
   font-size: clamp(15px, 1vw, 1vw);
   font-family: var(--font-raleway);
+}
+.inner-news-main .row1 .content ul li:not(:last-child) {
+  margin-bottom: clamp(8px, 0.8vh, 0.8vh);
 }
 .inner-news-main .row1 .content p {
   font-size: 1vw;
