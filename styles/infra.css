@@ -61,7 +61,74 @@
 #row-classroom-1 .column-classroom:nth-child(2) ul li {
   font-size: 1vw;
 }
-@media only screen and (max-width: 1200px) {
+
+/* tabs-css-starts-here */
+#tabs-library {
+  position: relative;
+  margin: 0 6vw;
+  padding-top: clamp(40px, 5vh, 5vh);
+  padding-bottom: clamp(40px, 5vh, 5vh);
+}
+.tabcontainer {
+  width: 60%;
+  margin: 0 auto;
+}
+
+ul.tabs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+ul.tabs li {
+  background: none;
+  color: var(--color-brown);
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: clamp(18px, 1.1vw, 1.1vw);
+  border: solid 1px #ccc;
+  margin-bottom: 5px;
+}
+
+ul.tabs li.current {
+  background: #ededed;
+  color: #222;
+}
+
+.tab-content {
+  display: none;
+  background: #ededed;
+  padding: 15px;
+  font-size: clamp(16px, 1.1vw, 1.1vw);
+}
+
+.tab-content.current {
+  display: inherit;
+}
+.tab-content button {
+  width: auto !important;
+}
+.tab-content button .text {
+  padding-left: 20px !important;
+}
+.tab-content ul {
+  padding-left: 20px;
+}
+@media only screen and (min-width: 1101px) {
+  .library-page-vmls {
+    margin-top: 20vh;
+  }
+}
+.library-page-vmls ul {
+  display: block !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.library-page-vmls ul li {
+  font-size: clamp(16px, 1.1vw, 1.1vw) !important;
+}
+
+@media only screen and (max-width: 1100px) {
   #section-2 {
     display: none;
   }
@@ -108,5 +175,8 @@
     .float-infra {
     opacity: 1;
     width: 49.5%;
+  }
+  .tabcontainer {
+    width: 100% !important;
   }
 }

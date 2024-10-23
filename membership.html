@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <title>Membership</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/menu.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/dropdown.css" />
+    <link rel="stylesheet" href="./styles/coj.css" />
+    <link rel="stylesheet" href="./styles/news.css" />
+    <link rel="stylesheet" href="./styles/footerresponsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Imperator%3A400"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <style>
+      @font-face {
+        font-family: "Imperator";
+        src: url("/public/Imperator.ttf");
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="landing" id="coj-landing">
+      <!-- menu-starts-here -->
+      <div class="menu" id="menu-content">
+        <div class="menu-main">
+          <!-- close-button -->
+          <div class="close-btn" id="close-btn">
+            <img src="./public/x.svg" alt="image" />
+            <p>CLOSE</p>
+          </div>
+          <!-- close-button -->
+          <div class="menu-main-left wow bounceInUp">
+            <!-- arrow-image -->
+            <a class="menu-arrow-img" href="#"
+              ><img src="./public/frame-68@2x.png" alt="image"
+            /></a>
+            <!-- arrow-image -->
+            <div class="menu-top">
+              <ul class="menu-top-1a">
+                <li class="dropbtn">
+                  <a href="./index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    About <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./About-VMRF.html">About VMRF ></a>
+                    <a href="./about.html">About VMLS ></a>
+                    <a href="./Dr.A.Shanmugasundaram.html">Founder ></a>
+                    <a href="./Dr.A.S.Ganesan.html">Chancellor ></a>
+                    <a href="./Dr.AnanthPadmanabhan.html">Dean ></a>
+                  </div>
+                </li>
+
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    Admission <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./how-to-apply.html">Admission Process ></a>
+                  </div>
+                </li>
+
+                <li class="dropbtn">
+                  <a href="./Scholarships.html">Scholarships</a>
+                </li>
+
+                <li class="dropbtn">
+                  <a href="./Collaborations.html">Collaborations</a>
+                </li>
+                <li class="dropbtn">
+                  <a href="./academics.html">Academics</a>
+                </li>
+
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    Leadership <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./board-of-advisors.html">Board of Advisors ></a>
+                    <a href="./mentoring-committee.html"
+                      >Mentoring Committee ></a
+                    >
+                  </div>
+                </li>
+
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    Faculty <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./faculty.html">Faculty Profiles ></a>
+                    <a href="./achievements.html">Faculty Achievements ></a>
+                    <a href="#">Guest Lecturers ></a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <button onclick="toggleDropdown(this)" class="dropbtn">
+                    Campus Life <i class="fas fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="./Campus.html">Infrastructure ></a>
+                    <a href="#">Campus Support ></a>
+                    <a href="#">Club's and Committees ></a>
+                  </div>
+                </li>
+
+                <li class="dropbtn">
+                  <a href="./library.html">Library</a>
+                </li>
+                <li class="dropbtn">
+                  <a href="./student-affairs.html">Student Affairs</a>
+                </li>
+                <li class="dropbtn">
+                  <a href="#">Governance and Policy</a>
+                </li>
+                <li class="dropbtn">
+                  <a href="./Contact-Us.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-main-right">
+            <div class="menu-main-right-row1">
+              <img src="./public/group-frame@2x.jpg" alt="image" />
+            </div>
+            <div class="menu-main-right-row2">
+              <div class="image-box">
+                <div class="img-box-content">
+                  <div>
+                    <p><span>18 Oct 2024</span><span>VMLS</span></p>
+                    <h3>International Conference on Rivers 2024</h3>
+                  </div>
+                  <p>
+                    The International Conference on Rivers 2024, scheduled for
+                    October 18-19, 2024, brings together scholars, experts, and
+                    practitioners to engage in interdisciplinary dialogue on the
+                    socio-legal aspects of river governance.
+                  </p>
+                </div>
+                <div class="img-box-img">
+                  <img src="./assets/news/new/rivers.home.jpg" alt="image" />
+                </div>
+              </div>
+              <div class="image-box">
+                <div class="img-box-content">
+                  <div>
+                    <p>09 Nov 2024</p>
+                    <h3>Faculty Development Program (FDP)</h3>
+                  </div>
+                  <p>
+                    The document provides details of a Virtual Faculty
+                    Development Program (FDP) on Academic Scholarship & Research
+                    Excellence in Law, organized by Vinayaka Mission's Law
+                    School (VMLS) Research Committee.
+                  </p>
+                </div>
+                <div class="img-box-img">
+                  <img src="./assets/news/new/fdp.jpg" alt="image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu-ends-here -->
+      <main class="main-landing">
+        <div class="header-main">
+          <div class="topbar" data-aos="slide-right">
+            <p>+91 7358201234 | admissions@vmls.edu.in</p>
+            <div class="topbar-right-img" id="right-menu">
+              <img
+                class="desktop-bar"
+                src="./public/Group-619.png"
+                alt="image"
+              />
+              <img
+                class="mobile-bar"
+                src="./public/two-line-menu.svg"
+                alt="image"
+              />
+              <p>MENU</p>
+            </div>
+          </div>
+          <div class="header" data-aos="slide-right" id="bg-white-5">
+            <img
+              class="header-img-01"
+              src="./public/Group-533.png"
+              alt="image"
+            />
+            <img
+              class="header-img-02"
+              src="./public/asset-44x-1@2x.png"
+              alt="image"
+            />
+          </div>
+        </div>
+      </main>
+    </div>
+    <section id="inner-news">
+      <div class="inner-news-main" id="rules-and-regulation">
+        <div class="row1">
+          <h3 class="inner-news-top-heading">Membership</h3>
+          <div class="content">
+            <ul>
+              <li>
+                The Library services are open to registered members only. Guest
+                visitors will be allowed only for short duration, and with prior
+                approval.
+              </li>
+              <li>
+                Membership categories: The Library will have the following
+                categories of members
+              </li>
+            </ul>
+          </div>
+          <div class="content">
+            <table class="custom-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Eligibility</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Category">Undergraduate</td>
+                  <td data-label="Eligibility">
+                    Students of LLB (3 years), B.A LLB, BBA LLB and B.Com LLB (5
+                    years) and any other Bachelor's degree Programmes at VMLS
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Category">Masters</td>
+                  <td data-label="Eligibility">
+                    Students of Master Degree Programmes at VMLS
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Category">Research Staff</td>
+                  <td data-label="Eligibility">
+                    Research Associates and Research Scholars at VMLS
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Category">Faculty</td>
+                  <td data-label="Eligibility">VMLS teaching staff</td>
+                </tr>
+                <tr>
+                  <td data-label="Category">Staff (Non-teaching)</td>
+                  <td data-label="Eligibility">
+                    Non-teaching administrative heads, staffs and all other VMLS
+                    patrons including members of other Law centres under VMLS
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Category">VMRF administration</td>
+                  <td data-label="Eligibility">
+                    The members of VMRF University administration
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Category">Campus Students</td>
+                  <td data-label="Eligibility">
+                    Undergraduate and Masters category members of Campus
+                    Libraries which have reciprocal arrangements with the
+                    Library
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Category">Campus Staff</td>
+                  <td data-label="Eligibility">
+                    Faculty and Research Staff category members of Campus
+                    Libraries which have reciprocal arrangements with the
+                    Library
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Category">Associate Students</td>
+                  <td data-label="Eligibility">
+                    Undergraduate and Postgraduate category members of Associate
+                    Libraries (other than AV Campus)
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Category">Associate Faculty</td>
+                  <td data-label="Eligibility">
+                    Faculty and research staff members of Associate Libraries
+                    (other than AV Campus)
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Category">Visitors</td>
+                  <td data-label="Eligibility">
+                    Participants of short courses having a duration of not less
+                    than 4 weeks, and who are required to obtain a No-Due
+                    certificate from the Library
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="Category">Walk-in Visitors</td>
+                  <td data-label="Eligibility">
+                    Casual visitors, and participants of short courses having a
+                    duration of less than 4 weeks
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="content">
+            <ul>
+              <li>
+                VMLS Faculty, Students and Staff of VMLS automatically become
+                members of the Library by virtue of possessing a valid VMLS
+                photo identity card, which is required to be registered at the
+                Library service desk.
+              </li>
+              <li>
+                VMLS Members are required to register separately in other Campus
+                Libraries which have reciprocal arrangement with the Library.
+                Similarly, members of such Campus Libraries can register at the
+                VMLS Library.
+              </li>
+              <li>
+                Walk-in visitors shall hold no borrowing privileges, but may be
+                allowed to use the Library Material within the Library premises,
+                with prior permission of the Librarian.
+              </li>
+              <li>
+                Associate Faculty and Associate Students membership will allow
+                the use of VMLS Library
+              </li>
+              <li>
+                Material on inter-Library loan through their respective
+                libraries, and also use all the facilities
+              </li>
+              <li>
+                Available to walk-in visitors without any prior permission.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div
+        class="footer coj-foot scholarship-foot"
+        id="contact-us"
+        data-aos="slide-right"
+      >
+        <div class="footer-row">
+          <img
+            class="foot-logo"
+            src="./assets/last/fotter-logo.png"
+            alt="image"
+          />
+          <h3>Law School of the Future</h3>
+          <div class="social-links social-links-footer">
+            <a href="https://www.facebook.com/Vmlschennai" target="_blank">
+              <img src="./assets/last/icons8-facebook 1.png" alt="image" />
+            </a>
+            <a
+              href="https://instagram.com/vmls_chennai?igshid=OGQ5ZDc2ODk2ZA=="
+              target="_blank"
+            >
+              <img src="./assets/last/icons8-instagram 1.png" alt="image" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/vmlschennai/"
+              target="_blank"
+            >
+              <img src="./assets/last/Vector.png" alt="image" />
+            </a>
+            <a href="https://twitter.com/Vmlschennai" target="_blank">
+              <img src="./assets/last/icons8-twitter 1.png" alt="image" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-row address-row">
+          <div class="foot-clmn">
+            <div class="heading-foot">
+              <span
+                ><img src="./assets/last/map.png" alt="image" />
+                <h4>VMLS Campus Address</h4></span
+              >
+            </div>
+            <p>
+              Nayaka Nagar, Rajiv Gandhi Salai (Old Mahabalipuram Road),
+              Paiyanoor, Chennai- 603104 Tamil Nadu, India
+            </p>
+          </div>
+          <div class="foot-clmn">
+            <div class="heading-foot">
+              <span
+                ><img src="./assets/last/map.png" alt="image" />
+                <h4>Corporate Office Address</h4></span
+              >
+            </div>
+            <p>
+              No: 213, Old No: 160, Behind Doshi Tower, Poonamallee High Road,
+              Kilpauk, Chennai- 600 010, Tamil Nadu, India
+            </p>
+          </div>
+        </div>
+        <div class="footer-row contact-us">
+          <div class="foot-clmn">
+            <h4>Contact Us</h4>
+            <div class="heading-foot">
+              <span
+                ><img src="./assets/last/phone.png" alt="image" />
+                <p>18003094350 | 7358201234</p></span
+              >
+            </div>
+            <div class="heading-foot">
+              <span
+                ><img src="./assets/last/email.png" alt="image" />
+                <p>admissions@vmls.edu.in</p></span
+              >
+            </div>
+          </div>
+          <div class="foot-clmn">
+            <h4>Help & Support</h4>
+            <div class="help-support">
+              <a href="./help/internal-complaint-committee.html"
+                >Internal Complaint Committee</a
+              >
+              <a href="./help/anti-ragging-committee.html"
+                >Anti Ragging Committee</a
+              >
+              <a href="./help/anti-ragging-squad.html">Anti Ragging Squad</a>
+              <a href="./help/students-grievance-redressal-committee.html"
+                >Students Grievance Redressal Committee</a
+              >
+              <a href="./help/gender-sensitization-cell.html"
+                >Gender Sensitization Cell</a
+              >
+              <a href="./help/women-empowerment-cell.html"
+                >Women Empowerment Cell</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer-row">
+          <h3>Get to know us</h3>
+          <form action="#" method="post">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your Name*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address*"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your Mobile number"
+              />
+            </div>
+            <div class="form-group">
+              <select id="state" name="state" placeholder="Select State">
+                <option value="">Select State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+              </select>
+              <select id="city" name="city" placeholder="Select City">
+                <option value="">Select City</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Pune">Pune</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+        <span class="foot-bottom">
+          <a href="./iqac.html">IQAC</a>
+          <a href="#">Copyright © 2024 VMLS</a>
+        </span>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="./script/menu.js"></script>
+    <script src="./script/dropdown.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

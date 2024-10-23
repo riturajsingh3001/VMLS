@@ -184,3 +184,25 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   VideoPlay();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var tabs = document.querySelectorAll("ul.tabs li");
+  var contents = document.querySelectorAll(".tab-content");
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      var tab_id = this.getAttribute("data-tab");
+
+      tabs.forEach(function (item) {
+        item.classList.remove("current");
+      });
+
+      contents.forEach(function (content) {
+        content.classList.remove("current");
+      });
+
+      this.classList.add("current");
+      document.getElementById(tab_id).classList.add("current");
+    });
+  });
+});

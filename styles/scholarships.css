@@ -111,15 +111,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  column-gap: 2vw;
 }
 .videoSchlorshipPage-column {
+  width: 50%;
   display: flex;
   flex-direction: column;
-  row-gap: clamp(15px, 1vh, 1vh);
+  row-gap: clamp(15px, 1.5vh, 1.5vh);
 }
 .videoSchlorshipPage-column h3 {
-  font-size: clamp(18px, 1.5vw, 1.5vw);
+  font-size: clamp(22px, 1.7vw, 1.7vw);
   font-weight: 500;
+}
+.videoSchlorshipPage-column h4 {
+  font-size: clamp(17px, 1.2vw, 1.2vw);
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: var(--color-brown);
+}
+.videoSchlorshipPage-column p {
+  font-size: clamp(15px, 1vw, 1vw);
+  font-weight: 400;
 }
 @media only screen and (max-width: 1100px) {
   .scholarships,
@@ -174,5 +186,12 @@
   }
   .scholarship-foot {
     margin-top: 0;
+  }
+  .videoSchlorshipPage {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .videoSchlorshipPage-column {
+    width: 100%;
   }
 }
