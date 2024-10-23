@@ -5,6 +5,7 @@
   .footer-row.contact-us {
     padding-top: 40px !important;
     padding-left: 5px !important;
+    padding-bottom: 40px;
   }
   .social-links-footer {
     display: flex;
@@ -31,7 +32,7 @@
     padding-bottom: 70px !important;
   }
   .foot-bottom a {
-    font-size: 11px !important;
+    font-size: 15px !important;
   }
   .footer {
     display: block !important;
@@ -62,4 +63,24 @@
   .footer h3 {
     font-size: 20px !important;
   }
+  .help-support a {
+    font-size: 15px !important;
+  }
+}
+.footer-row.contact-us {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6vh;
+}
+.help-support {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(10px, 1vh, 1vh);
+}
+.help-support a {
+  font-size: 1vw;
+  font-family: var(--font-raleway);
+}
+.help-support a:hover {
+  color: var(--color-brown);
 }

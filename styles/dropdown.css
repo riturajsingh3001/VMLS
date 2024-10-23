@@ -50,7 +50,7 @@
   display: block;
 }
 #bg-white-5 {
-  background-color: white;
+  background-color: #e4e4e4;
 }
 @media only screen and (max-width: 1100px) {
   .dropdown button {

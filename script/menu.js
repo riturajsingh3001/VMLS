@@ -125,17 +125,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// iqac footer link insertion
-window.onload = function () {
-  const footBottom = document.querySelector(".foot-bottom");
-
-  const newLink = document.createElement("a");
-  newLink.href = "iqac.html";
-  newLink.textContent = "IQAC";
-
-  footBottom.insertBefore(newLink, footBottom.firstChild);
-};
-
 // video-popup-js
 // Function to extract video ID from a YouTube URL
 function getYouTubeID(url) {
