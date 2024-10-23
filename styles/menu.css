@@ -62,7 +62,7 @@ a {
   align-items: center;
   height: 50vh;
   width: 100%;
-  column-gap: 2vw;
+  column-gap: 0.5vw;
 }
 .menu-main-right-row1 img {
   width: 68.8vw;

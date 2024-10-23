@@ -522,3 +522,17 @@
     font-weight: bold;
   }
 }
+
+/* student-affairs-css-starts-here */
+#student-affairs {
+  position: relative;
+  margin: 0 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+#student-affairs h1 {
+  font-size: clamp(25px, 2.5vw, 2.5vw);
+  color: var(--color-brown);
+}
