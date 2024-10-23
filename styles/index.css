@@ -162,6 +162,12 @@
   .deans-row-top {
     padding-top: 44px !important;
   }
+  div.menu-top a {
+    font-size: 16px !important;
+  }
+  div.dropdown button {
+    font-size: 16px !important;
+  }
 }
 
 /* styles\iqac.css */
