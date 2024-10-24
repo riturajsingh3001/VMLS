@@ -62,6 +62,9 @@
   .dropbtn {
     padding: 10px;
   }
+  .dropdown {
+    margin-bottom: 0px;
+  }
 }
 .menu-top li:hover::before {
   content: "\2192";
