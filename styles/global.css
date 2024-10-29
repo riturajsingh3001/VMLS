@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 body {
   margin: 0;
   line-height: normal;
@@ -6,7 +8,7 @@ body {
 :root {
   /* fonts */
   --font-raleway: "Inter", sans-serif;
-  --font-imperator: Imperator;
+  --font-imperator: "Tinos", serif;
 
   /* Colors */
   --color-white: #fff;
