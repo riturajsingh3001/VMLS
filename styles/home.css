@@ -953,8 +953,11 @@
 .section.section-campus-page {
   height: auto !important;
 }
-.content-acad-collab {
+.Collaborations-page-inner-vmls {
   padding-top: 22vh !important;
+}
+.content-acad-collab {
+  padding-top: 2vh !important;
   height: 100%;
   padding: 1vw 6vw;
   display: flex;
@@ -988,7 +991,7 @@
 
 @media only screen and (max-width: 1200px) {
   .content-acad-collab {
-    padding-top: 20px !important;
+    padding-top: 0px !important;
     padding-bottom: 20px !important;
   }
   h3 {

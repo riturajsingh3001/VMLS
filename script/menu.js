@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let headerImgs = document.querySelectorAll(".header-img-02");
   Array.from(headerImgs).forEach((headerImg) => {
     let link = document.createElement("a");
-    link.href = "https://vmls.netlify.app/";
+    link.href = "https://vmls.edu.in/";
     headerImg.parentNode.insertBefore(link, headerImg);
     link.appendChild(headerImg);
   });
