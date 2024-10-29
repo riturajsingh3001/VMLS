@@ -84,11 +84,3 @@
   right: 10px;
   z-index: 99;
 }
-@media only screen and (min-width: 768px) and (max-width: 1101px) {
-  .dropdown button {
-    font-size: 30px !important;
-  }
-  .menu-top a {
-    font-size: 30px !important;
-  }
-}
