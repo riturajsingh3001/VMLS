@@ -543,3 +543,488 @@
   font-size: clamp(25px, 2.5vw, 2.5vw);
   color: var(--color-brown);
 }
+
+/* International Conference on Rivers css starts here */
+#river-conference {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.rivConf-header {
+  position: relative;
+  width: 100%;
+  padding: 0 6vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(12px, 1vh, 1vh);
+  min-height: clamp(300px, 30vh, 30vh);
+  background-image: url("../public/rivers/pg-head.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  padding-bottom: clamp(30px, 5vh, 5vh);
+}
+.rivConf-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+.rivConf-header h2 {
+  font-size: clamp(20px, 2.5vw, 2.5vw);
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.rivConf-header h3 {
+  font-size: clamp(18px, 2vw, 2vw);
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+#river-conference h2 {
+  font-size: clamp(20px, 2.2vw, 2.2vw);
+  font-weight: 600;
+  color: var(--color-brown);
+}
+#river-conference h3 {
+  font-size: clamp(18px, 2vw, 2vw);
+  font-weight: 500;
+}
+#river-conference h4 {
+  font-size: clamp(16px, 1.5vw, 1.5vw);
+  font-weight: 500;
+  color: #292929;
+}
+#river-conference p {
+  font-size: clamp(15px, 1vw, 1vw);
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#river-conference li {
+  font-size: clamp(17px, 1.2vw, 1.2vw);
+  font-weight: 500;
+  line-height: 1.5;
+}
+#river-conference ul {
+  padding-left: 30px;
+}
+
+.rivConf-partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2vw;
+  row-gap: 12px;
+  align-items: center;
+  padding: 0 6vw;
+  padding-bottom: clamp(30px, 5vh, 5vh);
+  padding-top: clamp(30px, 5vh, 5vh);
+  align-self: center;
+  width: 82%;
+}
+.rivConf-content {
+  position: relative;
+  width: 78%;
+  padding: 0 6vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(12px, 1vh, 1vh);
+  text-align: center;
+  padding-bottom: clamp(30px, 5vh, 5vh);
+  padding-top: clamp(30px, 5vh, 5vh);
+  align-self: center;
+}
+.rivConf-imgBox {
+  position: relative;
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4vw;
+  row-gap: 20px;
+  align-items: center;
+  padding: 0 6vw;
+  padding-bottom: clamp(30px, 5vh, 5vh);
+  padding-top: clamp(30px, 5vh, 5vh);
+  align-self: center;
+}
+.rivConf-imgBox img {
+  width: 100%;
+}
+.rivConf-imgBox-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(12px, 1vh, 1vh);
+}
+.rivConf-cpil {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(15px, 2vh, 2vh);
+  padding-bottom: clamp(30px, 5vh, 5vh) !important;
+  padding-top: clamp(30px, 5vh, 5vh) !important;
+  padding: 0 6vw;
+}
+.rivConf-cpil h2 {
+  text-align: center;
+}
+.image-cpil {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.image-cpil .cpil-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.image-cpil .logo-cpil {
+  position: absolute;
+  bottom: -12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13%;
+  height: auto;
+  z-index: 1;
+}
+.content-cpil {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2vw;
+}
+.rivConf-subThemes {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(15px, 2vh, 2vh);
+  padding-bottom: clamp(30px, 5vh, 5vh) !important;
+  padding-top: clamp(30px, 5vh, 5vh) !important;
+  padding: 0 6vw;
+  background-color: #f5f5f5;
+}
+.rivConf-subThemes h2 {
+  text-align: center;
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.tab-row {
+  display: flex;
+  width: 100%;
+  position: relative;
+  column-gap: 8px;
+  margin-top: 8px;
+}
+
+.tab {
+  flex-basis: calc(25% - 2px);
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ccc;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab:last-child {
+  border-right: none;
+}
+
+.tab:hover {
+  background-color: #bbb;
+}
+
+.active-tab {
+  background-color: #900;
+  color: white;
+}
+
+.content-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.tabs .content {
+  display: none;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #900;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.tabs .content.active {
+  display: block;
+}
+.tabs ul {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .tabs {
+    display: none;
+  }
+  .tab-row {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px;
+  }
+  .custom-tabs-container {
+    display: flex !important;
+  }
+  .custom-tab {
+    flex-basis: 100%;
+  }
+  .rivConf-partners,
+  .rivConf-imgBox {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .rivConf-content {
+    width: 100%;
+  }
+  #river-conference h2 {
+    text-align: left !important;
+  }
+  .content-cpil,
+  .guidelines-imageBox,
+  .rivConf-travel,
+  .list-advisory-committee,
+  .lists-coc {
+    grid-template-columns: 1fr !important;
+  }
+  .guidelines-content {
+    margin-top: 20px;
+  }
+  div.rivConf-coc h2 {
+    text-align: center !important;
+    align-self: center;
+  }
+}
+.rivConf-partners img {
+  width: 100%;
+}
+.custom-tabs-container {
+  flex-wrap: wrap;
+  background-color: #fff;
+  display: none;
+}
+
+.custom-tab-row {
+  display: flex;
+  width: 100%;
+  position: relative;
+  column-gap: 8px;
+  margin-top: 8px;
+}
+
+.custom-tab {
+  flex-basis: calc(50% - 4px);
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ccc;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-tab:hover {
+  background-color: #bbb;
+}
+
+.active-custom-tab {
+  background-color: #900;
+  color: white;
+}
+
+.custom-content-wrapper {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+
+.custom-content {
+  display: none;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #900;
+  color: white;
+  box-sizing: border-box;
+}
+
+.custom-content.active {
+  display: block;
+}
+.rivConf-guidelines {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(15px, 2vh, 2vh);
+  padding-bottom: clamp(30px, 5vh, 5vh) !important;
+  padding-top: clamp(30px, 5vh, 5vh) !important;
+  padding: 0 6vw;
+}
+.guidelines-imageBox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 3vw;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.rivConf-deadlines {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(15px, 2vh, 2vh);
+  padding-bottom: clamp(30px, 5vh, 5vh) !important;
+  padding-top: clamp(30px, 5vh, 5vh) !important;
+  padding: 0 6vw;
+  background-color: #e4e4e4;
+}
+.rivConf-deadlines h2 {
+  text-align: center;
+}
+#importantDeadlines {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures equal width for both columns */
+}
+
+#importantDeadlines th,
+#importantDeadlines td {
+  padding: 10px;
+  text-align: center;
+  width: 50%; /* Forces both th and td to take 50% width */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+#importantDeadlines th {
+  font-size: clamp(16px, 1vw, 1vw);
+}
+
+#importantDeadlines td {
+  font-size: clamp(16px, 1vw, 1vw);
+  font-weight: bold;
+}
+
+#importantDeadlines .color-e9c37b {
+  background-color: #e9c37b;
+  color: #8b1615;
+}
+
+#importantDeadlines .color-8b1615 {
+  background-color: #8b1615;
+  color: #fff;
+}
+.rivConf-travel {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  row-gap: clamp(15px, 2vh, 2vh);
+  padding-bottom: clamp(30px, 5vh, 5vh) !important;
+  padding-top: clamp(30px, 5vh, 5vh) !important;
+  padding: 0 6vw;
+}
+.rivConf-advisory {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(15px, 2vh, 2vh);
+  padding-bottom: clamp(30px, 5vh, 5vh) !important;
+  padding-top: clamp(30px, 5vh, 5vh) !important;
+  padding: 0 6vw;
+  background-color: #e4e4e4;
+}
+.rivConf-advisory h2 {
+  text-align: center;
+}
+.column-advisory {
+  display: flex;
+  column-gap: 8px;
+}
+.column-advisory h4 {
+  color: #000 !important;
+  font-weight: 600 !important;
+  display: flex;
+  align-items: baseline;
+  column-gap: 8px;
+}
+.column-advisory i {
+  color: #8b1615;
+  font-size: clamp(20px, 1.3vw, 1.3vw);
+}
+.column-advisory-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.list-advisory-committee {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2vw;
+  row-gap: clamp(20px, 5vh, 5vh);
+  margin-top: 20px;
+}
+.list-advisory-committee p {
+  text-align: left !important;
+}
+.rivConf-coc {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(15px, 2vh, 2vh);
+  padding-bottom: clamp(30px, 5vh, 5vh) !important;
+  padding-top: clamp(30px, 5vh, 5vh) !important;
+  padding: 0 6vw;
+  background-color: #e4e4e4;
+}
+.rivConf-coc h2 {
+  text-align: center;
+}
+.lists-coc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2vw;
+  row-gap: clamp(20px, 5vh, 5vh);
+  margin-top: 20px;
+}
+.column-coc {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  text-align: center;
+  align-items: center;
+}
+.column-coc .bg-golden {
+  background: #fae6bd;
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: #8b1615;
+}
