@@ -10,7 +10,6 @@
 
 .dropdown {
   position: relative;
-  margin-bottom: 10px;
 }
 
 .dropbtn {
@@ -66,7 +65,7 @@
     margin-bottom: 0px;
   }
 }
-.menu-top li:hover::before {
+/* .menu-top li:hover::before {
   content: "\2192";
   margin-left: 100px;
   color: #000000;
@@ -83,4 +82,4 @@
   text-align: center;
   right: 10px;
   z-index: 99;
-}
+} */
